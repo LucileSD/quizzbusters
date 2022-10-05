@@ -1,8 +1,9 @@
 body {
 	background: linear-gradient(rgb(8, 43, 95), rgb(158, 166, 235));
-	margin-bottom: 654px;
+	margin-bottom: 200px;
 	color: whitesmoke;
 }
-#regle {
+#regle{
 	font-size: larger;
 }
+

@@ -1,7 +1,30 @@
 header {
-	margin-top: 0px;
-	border-style: none;
-	border-bottom-color: black;
-	background-color: rgb(101, 140, 247);
-	
+	background-color: rgb(96, 125, 204);
+	height: auto;
+	width: auto;
+	position: relative;
+}
+@font-face {
+	font-family: bauhaus;
+	src: url(Bauhaus93_V1.woff);
+}
+.titre {
+	font: bold;
+	font-size: 65px;
+	color: rgba(243, 180, 8, 0.897);
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	font-family: bauhaus;
+	margin: 0%;
+}
+.login {
+	display: flex;
+	justify-content: flex-end;
+	color: rgba(243, 180, 8, 0.897);
+	font-family: bauhaus;
+	margin: 0%;
+}
+a{
+	color: rgba(243, 180, 8, 0.897);
 }
