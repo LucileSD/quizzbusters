@@ -11,21 +11,24 @@
 	<body>
 		<header>
 			<h1 class="titre"><a href="index.html">QUIZZ BUSTERS</a>&nbsp; &nbsp; &nbsp;Qui sera le meilleur?</h1>
-			<h2 id="login">Se connecter</h2>
+			<h2 class="login">Mon Compte</h2>
+			<h2 class="login"><a href="login.html">se connecter</a></h2>
 		</header>
 		<div class="user_login">
 			<div class="old_user">
-				<p>Vous avez déjà un compte</p>
-				<p>Nom d'utilisateur:</p><input type="text" id="name_user" placeholder="Votre nom" required>
-				<p>Mot de passe:</p><input type="password" id="pwd_user" placeholder="mot de passe" required>
-				<p id="oubli">J'ai oublié mon mot de passe</p>
+				<p id="mini_titre">Vous avez déjà un compte</p>
+				<p>Nom d'utilisateur:</p><input type="text" id="name_user" placeholder="Votre pseudo" required>
+				<p>Mot de passe:</p><input type="password" id="pwd_user" placeholder="mot de passe" required><br>
+				<br>
 				<button>VALIDER</button>
+				<p id="oubli">J'ai oublié mon mot de passe</p>
 			</div>
 			<div class="new_user">
-				<p>Vous devez créer un compte</p>
+				<p id="mini_titre">Vous devez créer un compte</p>
 				<p>Email:</p><input type="email" id="mail_user" placeholder="exemple@mail.com" required>
 				<p>Mot de passe:</p><input type="password" id="pwd_user" placeholder="8 caractères min" required>
-				<p>Nom d'utilisateur:</p><input type="text" id="name_user" placeholder="Votre nom" required>
+				<p>Nom d'utilisateur:</p><input type="text" id="name_user" placeholder="Votre pseudo" required><br>
+				<br>
 				<button>VALIDER</button>
 			</div>
 		</div>

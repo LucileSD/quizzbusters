@@ -4,17 +4,15 @@ body {
 	color: whitesmoke;
 }
 .user_login {
-	display: flex;
-	flex-direction: column;
+	display: inline-flex;
+	flex-direction: row;
 	font-size: larger;
 }
-.old_user {
-	margin-right: 0px;
-}
-
 .new_user {
-	margin-left: 500px;
-	margin-top: 0px;
+	margin-left: 250px;
+}
+.old_user {
+	margin-left: 150px;
 }
 
 @font-face {
@@ -30,4 +28,12 @@ input {
 }
 button {
 	width: 100px;
+}
+p {
+	color: rgba(243, 180, 8, 0.897);
+	font-family: bauhaus;
+}
+
+#mini_titre {
+	color: rgb(244, 98, 7);
 }
