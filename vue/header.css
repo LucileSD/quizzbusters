@@ -9,8 +9,7 @@ header {
 	src: url(Bauhaus93_V1.woff);
 }
 .titre {
-	font: bold;
-	font-size: 65px;
+	font-size: 65px; 
 	color: rgba(243, 180, 8, 0.897);
 	display: flex;
 	align-content: center;
@@ -27,4 +26,5 @@ header {
 }
 a{
 	color: rgba(243, 180, 8, 0.897);
+	font-family: bauhaus;
 }

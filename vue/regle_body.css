@@ -1,9 +1,14 @@
 body {
-	background: linear-gradient(rgb(8, 43, 95), rgb(158, 166, 235));
-	margin-bottom: 200px;
+	background: rgb(8, 43, 95);
+	margin-bottom: auto;
 	color: whitesmoke;
 }
+@font-face {
+	font-family: bauhaus;
+	src: url(Bauhaus93_V1.woff);
+}
 #regle{
-	font-size: larger;
+	font-family: bauhaus;
+	font-size: 16px;
 }
 
