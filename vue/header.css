@@ -17,7 +17,7 @@ header {
 	font-family: bauhaus;
 	margin: 0%;
 }
-.login {
+h2 {
 	display: flex;
 	justify-content: flex-end;
 	color: rgba(243, 180, 8, 0.897);
@@ -28,3 +28,4 @@ a{
 	color: rgba(243, 180, 8, 0.897);
 	font-family: bauhaus;
 }
+

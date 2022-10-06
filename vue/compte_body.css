@@ -1,0 +1,17 @@
+body {
+	background: rgb(8, 43, 95);
+	margin-bottom: auto;
+	color: whitesmoke;
+}
+@font-face {
+	font-family: bauhaus;
+	src: url(Bauhaus93_V1.woff);
+}
+ul {
+	font-family: bauhaus;
+	font-size: 20px;
+	color: rgb(243, 67, 13);
+}
+li {
+	margin-bottom: 10px;
+}
