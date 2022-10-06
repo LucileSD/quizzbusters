@@ -3,6 +3,8 @@ header {
 	height: auto;
 	width: auto;
 	position: relative;
+	display: flex;
+	flex-direction: row;
 }
 @font-face {
 	font-family: bauhaus;
@@ -17,14 +19,16 @@ header {
 	font-family: bauhaus;
 	margin: 0%;
 }
-h2 {
+.login {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+	justify-content: flex-end !important;
 	color: rgba(243, 180, 8, 0.897);
 	font-family: bauhaus;
-	margin: 0%;
+	margin: 0px;
+
 }
-a{
+a {
 	color: rgba(243, 180, 8, 0.897);
 	font-family: bauhaus;
 }
