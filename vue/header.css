@@ -19,17 +19,15 @@ header {
 	font-family: bauhaus;
 	margin: 0%;
 }
-.login {
+.info_user {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end !important;
 	color: rgba(243, 180, 8, 0.897);
 	font-family: bauhaus;
-	margin: 0px;
-
+	margin-left: 200px;
 }
 a {
 	color: rgba(243, 180, 8, 0.897);
 	font-family: bauhaus;
 }
-
