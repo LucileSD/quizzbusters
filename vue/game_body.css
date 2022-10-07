@@ -1,0 +1,39 @@
+body {
+	background: rgb(8, 43, 95);
+	margin-bottom: auto;
+	color: whitesmoke;
+}
+#regle {
+	font-size: larger;
+}
+.play {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+#category {
+	margin-bottom: 10px;
+}
+#theme {
+	margin-bottom: 10px;
+}
+#roll {
+	border: solid;
+	width: 700px;
+}
+#answer {
+	border: solid;
+	height: 30px;
+	width: 500px;
+	margin-left: 100px;
+	text-align: center;
+}
+.clue {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.buzzer {
+	width: 250px;
+	margin-left: 220px;
+}
