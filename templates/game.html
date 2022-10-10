@@ -14,34 +14,32 @@
 				<h1 class="titre"><a href="index.html">QUIZZ BUSTERS</a>&nbsp; &nbsp; &nbsp;Qui sera le meilleur?</h1>
 			</div>
 			<div class="info_user">
-				<h2 class="me"><a href="compte.html">Mon Compte</a></h2>
-				<h2 class="login"><a href="login.html">se connecter</a></h2>
+				<h2 class="me"><a href="/compte">Mon Compte</a></h2>
+				<h2 class="login"><a href="/login">se connecter</a></h2>
 			</div>
 		</header>
-		<div id="regle"><a href="regle.html">Comment jouer</a></div>
+		<div id="regle"><a href="/regle">Comment jouer</a></div>
 		<div class="play">
 			<div class="points"></div>
 			<div class="clue">
-				{% for i in listOfChosenEnigma %}
-				<div id="category">Catégorie: {{ i[0] }}</div>
-				<div id="theme">Thème: {{ i[1] }}</div>
+				<div id="category">Catégorie: </div>
+				<div id="theme">Thème: </div>
 				<div id="roll">
 					<ul>
-						<li>Indice 1: {{ i[2] }}</li>
-						<li>Indice 2: {{ i[3] }}</li>
-						<li>Indice 3: {{ i[4] }}</li>
-						<li>Indice 4: {{ i[5] }}</li>
-						<li>Indice 5: {{ i[6] }}</li>
-						<li>Réponse: {{ i[7] }}</li>
+						<li>Indice 1: </li>
+						<li>Indice 2: </li>
+						<li>Indice 3: </li>
+						<li>Indice 4: </li>
+						<li>Indice 5: </li>
+						<li>Réponse: </li>
 					</ul>
-				{% endfor %}
 				</div>
 				<img class="buzzer" src="../static/images/little_buzzer.jpg">
 				<div id="answer">REPONSE</div>
 			</div>
 		</div>
 		<footer>
-			<p><a href="qui.html">Qui sommes-nous?</a></p>
+			<p><a href="/qui">Qui sommes-nous?</a></p>
 		</footer>
 	</body>
 </html>
