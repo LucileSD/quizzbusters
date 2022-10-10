@@ -1,0 +1,80 @@
+{
+	"sport": [
+		{
+			"id": "sportif_1",
+			"d1": "Je suis né le 14 décembre 1946 à Pasadena, suis un ancien joueur de tennis professionnel américain, devenu entraîneur.",
+			"d2": "je suis l'un des 5 meilleurs joueurs du monde dans la première moitié des années 1970.",
+			"d3": "je suis le numéro 1 mondial de 1972 à mi-1973, le vainqueur de deux tournois du Grand Chelem en simple (US Open 1971 et Wimbledon 1972) et du premier Masters joué en 1970 à Tokyo",
+			"d4": "grâce à mon sang-froid et mon fairplay, je suis surnommé le Gentleman Stan",
+			"d5": "des Adidas iconiques porte mon nom depuis 1978",
+			"a1": "Stan Smith"
+		},
+		{
+			"id": "competition_1",
+			"d1": "mon premier événement à eu lieu en 1981 à Santa Clara en Californie",
+			"d2": "les displines sportives doivent d'abord participer dans ma compétitions pour être intégrées aux JO",
+			"d3": "aucune nouvelle infrastructure doit être construites par ma ville hôte",
+			"d4": "le bowling, le tir à la corde, l'ultimate ou le kayal-polo sont des displines inscrites à ma compétition",
+			"d5": "je regroupe les disciplines qui ne pas inscrites aux jeux olympiques",
+			"a1": "JEUX MONDIAUX",
+			"a2": "LES JEUX MONDIAUX"
+		},
+		{
+			"id": "discipline_sportive_1",
+			"d1": "j'ai été créé en 1895 aux USA afin d'occuper les athlètes pendant l'hiver",
+			"d2": "mon nom d'origine est la mintonette",
+			"d3": "je m'inspire du basket-ball et du badminton",
+			"d4": "ma fédération est le FIVB",
+			"d5": "je me joue à 6 contre 6 sur un terrain de 18m sur 9m séparé en 2 par un filet",
+			"a1": "VOLLEY-BALL",
+			"a2": "VOLLEYBALL"
+		},{
+			"id": "categorie_1",
+			"d1": "je suis basé sur des sports existants",
+			"d2": "je suis réparti en 3 catégories:  les sourds, les déficiences physiques et les déficiences intellectuelles",
+			"d3": "certaines de mes displines sont le football à 5, le paracanoë ou le ultimate fauteuil",
+			"d4": "mes athlètes ne sont pas considérés comme des athlètes de haut niveau",
+			"d5": "mes règles sont aménagées pour qu'elles puissent être pratiqué par des personnes ayant un handicap physique ou sensoriel",
+			"a1": "HANDISPORT"
+		},
+		{
+			"id": "sportive_1",
+			"d1": "je suis née le 12 novembre 1961 en Roumanie",
+			"d2": "en Roumanie, je n'ai pû décider de toute ma vie car elle était scrutée par Ceaușescu",
+			"d3": "on me surnomme la petite fée de Montréal",
+			"d4": "Vous m'avez connue lors de JO de Montréal en 1976",
+			"d5": "je suis la première gymnaste au score parfait aux JO",
+			"a1": "NADIA COMANECI",
+			"a2": "COMANECI"
+		},
+		{
+			"id": "discipline_sportive_2",
+			"d1": "j'ai été codifié pour la première fois en 1846 en Angleterre",
+			"d2": "je suis à l'origine du football australien, du football gaélique ou du football américain",
+			"d3": "mes passes se font vers l'arrière",
+			"d4": "ceux sont les valeurs de l'ovalie",
+			"d5": "je peux être joué à XV, à XII ou à VII...",
+			"a1": "RUGBY"
+		},
+		{
+			"id": "discipline_sportive_atypique_1",
+			"d1": "je suis un sport collectif mixte inventé aux Pays-Bas",
+			"d2": "il y a 2 équipes de 8 joueurs, les joueurs peuvent passer derrière le panier",
+			"d3": "les quatres attaquants d'une équipe reste dans leur zone comme les 4 défenseurs restent dans leur zone",
+			"d4": "on me compare au basket-ball à cause mon panier même si mon panier n'a pas de panneau",
+			"d5": "je veux dire balle au panier en néerlandais",
+			"a1": "KORFBAL"
+		},
+		{
+			"id": "club_1",
+			"d1": "je suis un club de football évoluant en Jupiler Pro League",
+			"d2": "mon stade est surnommé l'Enfer de Sclessin",
+			"d3": "les couleurs du club sont rouge et blanc",
+			"d4": "je suis également connu sous le nom de Les rouches",
+			"d5": "mon stade est le long de la Meuse, face aux usines ArcelorMittal ",
+			"a1": "STANDARD DE LIEGE",
+			"a2": "ROYAL STANDARD DE LIEGE",
+			"a3": "RSCL"
+		}
+	]
+}

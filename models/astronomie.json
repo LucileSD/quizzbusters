@@ -1,0 +1,41 @@
+{
+	"astronomie": [
+		{
+			"id": "planete_1",
+			"d1": "j'ai 80 satellites connus",
+			"d2": "mes 3 lunes sont Callisto, Europe et Ganymède",
+			"d3": "j'ai le nom du dieu romain qui gouverne la terre et le ciel, ainsi que tous les êtres vivants",
+			"d4": "je suis la 5e planète du système solaire",
+			"d5": "je suis la plus grande planète du système solaire",
+			"a1": "JUPITER"
+		},
+		{
+			"id": "constellation_1",
+			"d1": "je suis l’une des 48 constellations identifiées par Ptolémée",
+			"d2": "mon étoile la plus brillante est β Aquarii (Sadalsuud), avec seulement une magnitude apparente de 2,9. C’est une supergéante rouge qui est à 612 années-lumière.",
+			"d3": "je suis entre le Capricorne à l'ouest et les Poissons à l'est",
+			"d4": "je suis aussi un signe du zodiaque correspondant au secteur de 30° de l'écliptique traversé par le Soleil du 21 janvier au 18 février",
+			"d5": "je suis le porteur d'eau",
+			"a1": "VERSEAU"
+		},
+		{
+			"id": "planete_2",
+			"d1": "je suis une planéte tellurique avec 2 satellites: Phobos et Déimos",
+			"d2": "j'ai perdu la presque totalité de mon activité géologique interne",
+			"d3": "je porte le même nom que le dieu de la guerre pour les romains",
+			"d4": "je suis la quatrième planète du système solaire",
+			"d5": "on me surnomme la planéte rouge",
+			"a1": "MARS"
+		},
+		{
+			"id": "projet_spatial_1",
+			"d1": "l'annonce de ma conception fût faite le 25 janvier 1984",
+			"d2": "l'explosion de Challenger a gelé ma construction, ma construction a donc débutée en 1998",
+			"d3": "je suis un projet qui regroupe, les USA, le Japon, l'Europe et la Russie",
+			"d4": "je suis un laboratoire, un observatoire, une station service",
+			"d5": "Thomas Pasquet a été l'un de mes commandant emblématique",
+			"a1": "ISS",
+			"a2": "STATION SPATIALE INTERNATIONALE"
+		}
+	]
+}

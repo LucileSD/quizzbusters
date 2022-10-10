@@ -1,0 +1,42 @@
+{
+	"anatomie": [
+		{
+			"id": "corps_1",
+			"d1": "chez l'humain, je suis situé entre le thorax, en haut, et le petit bassin, en bas",
+			"d2": "ma cavité contient le foie, l'intestin grêle, la rate, le pancréas",
+			"d3": "j'ai la cicatrice ombilicale centrale",
+			"d4": "on m'appelle aussi le ventre",
+			"d5": "j'ai l'ensemble des muscles de la paroi abdominale antérolatérale",
+			"a1": "ABDOMEN"
+		},
+		{
+			"id": "corps_2",
+			"d1": "je contient la fosse temporal",
+			"d2": "en vieillissant, je passe d'un stade cartilagineux à un stade osseux",
+			"d3": "je protège le système nerveux central",
+			"d4": "les pirates m'appelle Jolly Roger",
+			"d5": "je suis l'os de la tête",
+			"a1": "CRANE"
+		},
+		{
+			"id": "corps_3",
+			"d1": "je mesure en moyenne 10 cm et aide à la déglutition",
+			"d2": "je sers à la mastication",
+			"d3": "je suis un organe situé dans la cavité buccale",
+			"d4": "je suis l'organe du goût",
+			"d5": "je suis vascularisée par l'artère linguale",
+			"a1": "LANGUE",
+			"a2": "LA LANGUE"
+		},
+		{
+			"id": "reflexe_1",
+			"d1": "si je suis maintenue trop longtemps, le corps tombe en syncope",
+			"d2": "je peux être réflexe, par exemple quand vous parlez ou lors de la déglutition",
+			"d3": "je suis aussi une discipline de la plongée sous-marine",
+			"d4": "je peux être volontaire, quand vous plongez",
+			"d5": "je suis l'arrêt de la ventilation",
+			"a1": "APNEE"
+		}
+		
+	]
+}

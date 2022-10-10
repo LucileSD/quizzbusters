@@ -1,0 +1,68 @@
+{
+	"entreprise": [
+		{
+			"id": "business_1",
+			"d1": "je suis une entreprise familiale fondée en 1932 au Danemark",
+			"d2": "je suis la lovebrand la plus influente, et plait aux petits et aux grands",
+			"d3": "mes premiers jouets étaient en bois mais je bascule dans le plastique en 1952",
+			"d4": "je suis le design qui s'imbrique",
+			"d5": "je suis une petite brique en plastique de couleur",
+			"a1": "LEGO"
+		},
+		{
+			"id": "business_2",
+			"d1": "je suis l'acronyme de Ingvar Kamprad",
+			"d2": "mes designers se trouvent dans la ville de mon 1er magasin à Älmhuit",
+			"d3": "après la Bible et le Petit Livre rouge, mon catalogue le 3e ouvrage le plus publié au monde",
+			"d4": "je suis une marque suédoise mais mon siège est aux Pays-Bas",
+			"d5": "je suis le roi du meuble en kit",
+			"a1": "IKEA"
+		},
+		{
+			"id": "indice boursier",
+			"d1": "j'ai été créé le 31 décembre 1987",
+			"d2": "je fais suite au krach d'octobre 1987",
+			"d3": "je signifie Compagnie des agents de change",
+			"d4": "la loi bancaire de 1984 pour la réfomre du système bancaire à permis mon apparition",
+			"d5": "je suis le principal indice boursier de Paris",
+			"a1": "CAC 40",
+			"a2": "CAC40"
+		},
+		{
+			"id": "business_3",
+			"d1": "je suis fondée en 1889 près de Kyoto",
+			"d2": "depuis 1977, mon activité est vidéoludique",
+			"d3": "ma première console a succés fut la FAMICOM",
+			"d4": "en europe la FAMICOM sort sous le nom NES",
+			"d5": "mon héro le plus connu est Mario",
+			"a1": "NINTENDO"
+		},
+		{
+			"id": "business_4",
+			"d1": "mon nom est inspiré par la déesse grecque de la victoire",
+			"d2": "la société est créée en 1968 dans l'Oregon",
+			"d3": "je suis le plus grand équipementier sportif",
+			"d4": "JUST DO IT",
+			"d5": "je suis la marque à la virgule",
+			"a1": "NIKE"
+		},
+		{
+			"id": "business_5",
+			"d1": "j'ai été fondée en 1998 par Larry Page et Sergey Brin",
+			"d2": "je suis une filiale de la société Alphabet",
+			"d3": "mon slogan est 'Do the right thing'",
+			"d4": "je suis le G de GAFAM",
+			"d5": "je suis le moteur de recherche le plus connu",
+			"a1": "GOOGLE"
+		},
+		{
+			"id": "marque_1",
+			"d1": "je suis mise sur la marché en 1964 pour 2368$, je suis créée à Dearborn, siège social de ma marque",
+			"d2": "le directeur général de ma marque Lee Lacocca demande au deisgner de la cougar Dave Ash de me dessiner",
+			"d3": "j'ai à l'origine un moteur 6 cylindres en ligne de 2.8 litres et en option un V8 de 260 ci ou 289 ci",
+			"d4": "je suis une voiture mythique hollywoodienne, j'apparai dans de nombreux films comme Bullitt, 60 secondes chrono ou les gendarmes à Saint-Tropez",
+			"d5": "mon logotype représente un cheval qui galope de droite à gauche pour symboliser la conquête de l'ouest",
+			"a1": "FORD MUSTANG"
+		}
+	]
+}

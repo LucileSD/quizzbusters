@@ -1,0 +1,107 @@
+{
+	"geographie": [
+		{
+			"id": "pays_1",
+			"d1": "je suis un pays indépendant depuis 1917",
+			"d2": "je suis membre de l'Union européenne depuis 1995",
+			"d3": "je suis un pays scandinave",
+			"d4": "je  suis la patrie de NOKIA",
+			"d5": "ma capitale est Helsinki",
+			"a1": "FINLANDE"
+		},
+		{
+			"id": "pays_2",
+			"d1": "j'ai remporté 7 fois la CAN",
+			"d2": "je suis 94% désertique",
+			"d3": "j'ai une péninsule : le Sinaï",
+			"d4": "ma fête nationale est le 23 juillet",
+			"d5": "ma capital est le Caire",
+			"a1": "EGYPTE"
+		},
+		{
+			"id": "pays_3",
+			"d1": "ma capitale est créée en 1787, en récompense après la guerre d'indépendance américaine",
+			"d2": "je suis un état de l'Afrique de l'ouest",
+			"d3": "je suis sur la côte Atlantique entre la Guinée et le Libéria",
+			"d4": "ma langue officielle est l'anglais et mon créole est le Krio",
+			"d5": "ma capitale est Freetown",
+			"a1": "SIERRA LEONE",
+			"a2": "REPUBLIQUE DE SIERRA LEONE"
+		},
+		{
+			"id": "zone_1",
+			"d1": "je suis une zone géographique de l’océan Atlantique qui est nommée pour la première fois en 1950",
+			"d2": "je suis délimité par l'archipel des Bermudes, Miami, San Juan et Porto Rico",
+			"d3": "je serai secoué par des perturbations magnétiques et des flatulences océaniques",
+			"d4": "j'ai la réputation de faire disparaître des navires ou des avions",
+			"d5": "on me représente par un forme géographique à 3 côtés",
+			"a1": "LE TRIANGLE DES BERMUDES",
+			"a2": "TRIANGLE DES BERMUDES"
+		},
+		{
+			"id": "ile_1",
+			"d1": "le symbole de mon drapeau est la gorgone à 3 jambes",
+			"d2": "au nord-est se trouve  l'archipel volcanique des îles Éoliennes",
+			"d3": "je suis une région autonome d'Italie",
+			"d4": "je contient le volcan de l'Etna",
+			"d5": "ma capitale administrative est Palerme",
+			"a1": "SICILE"
+		},
+		{
+			"id": "ville_1",
+			"d1": "je suis fondée par les mormons en 1855",
+			"d2": "mon nom signifie 'les prairies'",
+			"d3": "je suis au milieu du désert des Mojaves",
+			"d4": "la légalisation des jeux d'argent de 1931, on contribué à ma notoriété",
+			"d5": "je suis sin city",
+			"a1": "LAS VEGAS"
+		},
+		{
+			"id": "ville_2",
+			"d1": "ma fondation fût faite après le combat entre Lydéric et Phineas",
+			"d2": "mon blason représente une fleur de Lys blanche sur fond rouge entourée de deux lions",
+			"d3": "je suis la quatrième agglomération de France",
+			"d4": "je suis la capitale des Flandres",
+			"d5": "je suis le chef-lieu des Hauts-de-France",
+			"a1": "LILLE"
+		},
+		{
+			"id": "ville_3",
+			"d1": "je suis intégrée au royaume d'Al-Andalus en 1090 par les almoravides",
+			"d2": "les rois catholiques me conquièrent en 1492",
+			"d3": "la dynastie des Nasrides batit l'Alhambra",
+			"d4": "je suis dans le sud-est de l'Andalousie",
+			"d5": "mon nom est identique au fruit du grenadier",
+			"a1": "GRENADE"
+		},
+		{
+			"id": "pays_4",
+			"d1": "je suis une île de l'océan atlantique d'une superficie de 70 273 km²",
+			"d2": "j'ai gagné mon indépendance en 1921, même si 20% de mon île m'a été retiré",
+			"d3": "nombreux de mes habitants ont émigré en amérique au moment de la grande famine",
+			"d4": "ma fête nationale est le 17 mars",
+			"d5": "ma capitale est Dublin",
+			"a1": "IRLANDE"
+		},
+		{
+			"id": "site_1",
+			"d1": "je suis une formation naturelle géologique de 40 couches différentes façonnées depuis 65 millions d'années",
+			"d2": "je suis le térritoire originel des Anasazis, et je suis découvert en 1540 par Don Garcias Lopez de Cardonas",
+			"d3": "je suis situé sur les comtés de Coconino et Mohave, entre le lac Powell et le lac Mead",
+			"d4": "je suis long de 450 km, large de 5.5 km à 30 km et d'une profondeur maximale de 1.6 km",
+			"d5": "décor idéal pour de nombreux western, je suis en Arizona et creusé par le fleuve Colorado",
+			"a1": "GRAND CANYON",
+			"a2": "LE GRAND CANYON"
+		},
+		{
+			"id": "ile_2",
+			"d1": "je suis une collectivité d'outre-mer de 124 km², d'environ 12 000 habitants dans l'hémisphère sud",
+			"d2": "la civilisation Lapita me colonise avant que les hollandais Williem Schouten et Jacob Lemaire me découvre le 21 mai 1616",
+			"d3": "je suis composé de 3 royaumes coutumiés polynésiens sous protectorat français depuis 1888 mes conservant mes royautés",
+			"d4": "mon chef-lieu est Mata Utu, je suis la collectivité la plus éloignée de Paris, 16 000 km",
+			"d5": "sur mon territoire, on parle français, wallisien et futunien",
+			"a1": "WALLIS ET FUTUNA",
+			"a2": "WALLIS-ET-FUTUNA"
+		}
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"informatique": [
+		{
+			"id": "langage_1",
+			"d1": "je suis un langage high-level créé en 1991",
+			"d2": "j'ai été crée par Guido Von Rossum",
+			"d3": "je suis un langage de programmation interprété, orienté objet",
+			"d4": "le poème Zen of ... inscrit mes préceptes",
+			"d5": "j'ai le même nom qu'un serpent",
+			"a1": "PYTHON"
+		},
+		{
+			"id": "langage_2",
+			"d1": "je suis un langage bas niveau",
+			"d2": "j'ai été développé par Dennis Ritchie",
+			"d3": "je fais un usage intensif des calculs d'adresse mémoire avec la notion de pointeur",
+			"d4": "je suis extrêmement utilisé dans des domaines comme la programmation embarquée car ma rapidité de rtraitement est importante",
+			"d5": "mon nom est une lettre",
+			"a1": "C"
+		},
+		{
+			"id": "materiel_1",
+			"d1": "je permet de stocker les bases de données",
+			"d2": "je permet l'accés au world Wide Web",
+			"d3": "je permet la mise à disposition de logiciels applicatifs",
+			"d4": "je réponds automatiquement à des requêtes clients",
+			"d5": "je suis une sorte d'ordinateur sans souris et sans clavier",
+			"a1": "SERVEUR",
+			"a2": "SERVEUR INFORMATIQUE"
+		},
+		{
+			"id": "systeme_exploitation_1",
+			"d1": "je suis créé en 1991 et open source",
+			"d2": "j'ai été créé par Linus Torvalds",
+			"d3": "je suis sous licence GNU GPL",
+			"d4": "je suis de type Unix",
+			"d5": "ma mascotte est TUX un manchot",
+			"a1": "LINUX"
+		},
+		{
+			"id": "composant_1",
+			"d1": "j'ai une capacité de calcul importante, je peux faire tourner des simulations de modèles météo",
+			"d2": "la connexion à la carte mère se fait à l’aide d’un port greffé sur un bus",
+			"d3": "j'intégre  des fonctions de décompression vidéo",
+			"d4": "mon but est d'afficher une image sur l'écran",
+			"d5": "on m'appelle aussi carte vidéo",
+			"a1": "CARTE GRAPHIQUE",
+			"a2": "PROCESSEUR GRAPHIQUE"
+		}
+	]
+}

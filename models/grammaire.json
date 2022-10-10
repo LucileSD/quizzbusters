@@ -1,0 +1,13 @@
+{
+	"grammaire": [
+		{
+			"id": "conjonction",
+			"d1": "en logique mathématique, je marque l'implication",
+			"d2": "je suis une conjonction de subordination",
+			"d3": "j'introduit une subordonnée circonstancielle de condition",
+			"d4": "après moi, il n'y a aucun 'rai'",
+			"d5": "je suis également une note de musique",
+			"a1": "SI"
+		}
+	]
+}

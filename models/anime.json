@@ -1,0 +1,50 @@
+{
+	"anime": [
+		{
+			"id": "personnage_1",
+			"d1": "mon personnage est inspiré du roman classique chinois du XVIe siècle, Le Voyage en occident",
+			"d2": "mon créateur est Akira Toriyama",
+			"d3": "mon granp-père m'a légué une boule à quatre étoiles",
+			"d4": "j'appartiens à l'espèce des Saiyans",
+			"d5": "mon nom de naissance est Kakarot",
+			"a1": "SON GOKU",
+			"a2": "SANGOKU"
+		},
+		{
+			"id": "film_disney_1",
+			"d1": "je suis sorti en 1994",
+			"d2": "je suis inspiré de Hamlet de Shakespeare",
+			"d3": "je suis le film d'animation en 2D le plus rentable de tous les temps",
+			"d4": "mon cation se déroule dans la savane africaine",
+			"d5": "je met en scène le jeune Simba",
+			"a1": "LE ROI LION"
+		},
+		{
+			"id": "japanime_1",
+			"d1": "mon nom dans la version originale est Harlock",
+			"d2": "j'ai été créé par Leiji Matsumoto en 1969",
+			"d3": "mon héro se bat contre les humanoïdes",
+			"d4": "mon navire s'appelle l'Atlantis",
+			"d5": "je suis le pirate de l'espace qui protège l'humanité",
+			"a1": "ALBATOR"
+		},		
+		{
+			"id": "japanime_2",
+			"d1": "je suis une adaptation d'une oeuvre de Mark Twain",
+			"d2": "je suis réalisé par Hiroshi Saitô en 1980",
+			"d3": "mon action se passe sur les bords du fleuve Mississippi",
+			"d4": "mon meillleur ami est Huckleberry Finn",
+			"d5": "j'aime l'école surtout quand elle est loin",
+			"a1": "TOM SAWYER"
+		},
+		{
+			"id": "japanime_3",
+			"d1": "je suis écrit et dessiné par One",
+			"d2": "ma prononciation japonaise est 'Wanpanman'",
+			"d3": "la voix française de mon héros est Orelsan",
+			"d4": "mon héros s'est entrainé pendant 3 ans en faisant 100 pompes, 100 squats et 10 km de course quotidiennement",
+			"d5": "je suis l'histoire de Saitama, un super-héros au super coup de poing",
+			"a1": "ONE PUNCH MAN"
+		}
+	]
+}

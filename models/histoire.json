@@ -1,0 +1,111 @@
+{
+	"histoire": [
+		{
+			"id": "revolte",
+			"d1": "mon insurrection a durer 72 jours de 1870 à 1871",
+			"d2": "ma fin a été marquée par la semaine sanglante",
+			"d3": "je marque le rejet de la capitulation face à la Prusse et du siège de Paris",
+			"d4": "j'ai commencé car le gouvernement a voulu reprendre les canons de la butte Montmartre, sans prévenir les parisiens",
+			"d5": "j'ai oppposé les parisiens aux versaillais",
+			"a1": "LA COMMUNE",
+			"a2": "COMMUNE"
+		},
+		{
+			"id": "personne_1",
+			"d1": "je suis né le 10 juilllet 1856 en Croatie",
+			"d2": "je suis mort le 1943 à New-York en tant qu'ingénieur américain d'origine serbe",
+			"d3": "je suis connu pour mes travaux sur l'énergie électrique",
+			"d4": "j'ai travaillé avec Thomas Edison qui s'est attribué plusieurs de mes inventions",
+			"d5": "mon nom est donné à l’unité internationale d’induction magnétique",
+			"a1": "NICOLAS TESLA",
+			"a2": "TESLA",
+			"a3": "NIKOLA TESLA"
+		},
+		{
+			"id": "mouvement_1",
+			"d1": "je me déroule de 1330 à 1630",
+			"d2": "je suis découpé en 3 périodes: Trecento, Quattrocento, Cinquecento",
+			"d3": "on situe ma naissance en Italie",
+			"d4": "je vois la naissance de l'humanisme",
+			"d5": "les œuvres de mon époque s'inspirent davantage de l'art gréco-romain",
+			"a1": "RENAISSSANCE",
+			"a2": "LA RENAISSANCE"
+		},
+		{
+			"id": "personne_2",
+			"d1": "je suis né en 1451 à Gênes",
+			"d2": "je suis un marin explorateur travaillant pour les rois catholiques",
+			"d3": "je suis influencé par les écrits de Marco Polo",
+			"d4": "mes premières caravelles fuent la Pinta et la Niña",
+			"d5": "j'avais la mission d'atteindre les Indes",
+			"a1": "CHRISTOPHE COLOMB",
+			"a2": "COLOMB"
+		},
+		{
+			"id": "ouvrage_1",
+			"d1": "ma consultation se fait par des tables et des index",
+			"d2": "a la Renaissance, les humanistes ont fait de moi un ouvrage imprimé de cercle de connaissances",
+			"d3": "Denis Diderot a dirigé une de mes versions en 1751",
+			"d4": "je suis un ouvrage organisé pour rendre la connaissance accessible au public",
+			"d5": "je constitue un abrégé des connaissances",
+			"a1": "ENCYCLOPEDIE"
+		},
+		{
+			"id": "navire_1",
+			"d1": "je viens du grec galéa",
+			"d2": "je suis aussi une condamnation aux travaux forcés",
+			"d3": "les rames sont actionnées par la force musculaire lors des manoeuvres d'attaques",
+			"d4": "je suis un type de navire à rames et voiles latines sur un, deux ou trois mâts à antennes",
+			"d5": "je suis mue par de galériens",
+			"a1": "GALERE"
+		},
+		{
+			"id": "personne_3",
+			"d1": "ma naissance est l'origine du calendrier grégorien",
+			"d2": "plusieurs disciples ont répendu ma parole",
+			"d3": "je suis un juif galiléen, originaire de Nazareth",
+			"d4": "mon père est Joseph et ma mère Marie",
+			"d5": "je suis le fils de Dieu",
+			"a1": "JESUS",
+			"a2": "JESUS CHRIST"
+		},
+		{
+			"id": "annee_1",
+			"d1": "dans le calendrier chinois, je suis l'année 4722, l'année du dragon",
+			"d2": "je suis une année bissextile du 21éme siècle",
+			"d3": "je vois la soixantième élection américaine",
+			"d4": "l'Allemagne reçoit l'UEFA de football",
+			"d5": "je connais les jeux olympiques d'été de Paris",
+			"a1": "2024"
+		},
+		{
+			"id": "personne_4",
+			"d1": "je suis un militant anti-fasciste, anti-colonialiste",
+			"d2": "je suis célèbre pour mes oraisons funèbres comme celle pour Jean Moulin",
+			"d3": "résistant, j'étais proche du charles de Gaulle",
+			"d4": "je suis le tout premier ministre de la culture",
+			"d5": "je suis l'auteur de 'La Condition Humaine'",
+			"a1": "MALRAUX",
+			"a2": "ANDRE MALRAUX"
+		},
+		{
+			"id": "personne_5",
+			"d1": "je suis né le 9 septembre 1585 et mort le 4 décembre 1642 à Paris",
+			"d2": "je m'illustre dans l'affaire des démons de Loudun dans les années 1630",
+			"d3": "je suis considéré comme l'un des fondateurs majeurs de l'État moderne en France",
+			"d4": "j'étais le principal ministre d'Etat de Louis XIII",
+			"d5": "mon successeur fût le cardinal de Mazarin",
+			"a1": "RICHELIEU",
+			"a2": "CARDINAL DE RICHELIEU"
+		},
+		{
+			"id": "personne_6",
+			"d1": "je suis né à Lupiac entre 1611 et 1615 sous le nom de charles de Batz",
+			"d2": "je m'engage au régiment des gardes français sur recommandation de Mr de Treville",
+			"d3": "je meurs le 25 juin 1673 durant le siège de Maastricht après avoir été gouverneur de Lille",
+			"d4": "Louis XIV que je protége depuis l'enfance me nomme capitaine lieutenant de la première compagnie de mousquetaire",
+			"d5": "Alexandre Dumas romance mes avantures avec Armand de Sillèque d'Athos d'Autevieille, Isaac de Portau et Henri D'Aramitz",
+			"a1": "D'ARTAGNAN"
+		}
+	]
+}

@@ -1,0 +1,183 @@
+{
+	"arts": [
+		{
+			"id": "personnality_1",
+			"d1": "je suis née le 2 décembre 1981 à McComb dans l'état du Missippi",
+			"d2": "à 13 ans, je gagné ma vie grâce à Mickey Mouse Club",
+			"d3": "pour mon premier album j'ai commencé les tournées dans les centres commerciaux et une tournée en première partie de NSYNC",
+			"d4": "il y a eu un mouvement # pour me soutenir dans ma demande de levée sous tutelle",
+			"d5": "mon premier grand succés est: Baby One More Time",
+			"a1": "BRITNEY SPEARS"
+		},
+		{
+			"id": "film_1",
+			"d1": "sortie en 1990, mon héros se bat contre les hommes de Cohaagen",
+			"d2": "mon héros n'est peut-être pas Doug Quaid, c'est peut-être Carl Hauser",
+			"d3": "mon réalisateur est Paul Verhoeven",
+			"d4": "mon titre est Voyage au centre de la mémoire au Québec",
+			"d5": "Arnold Schwarzenegger est sur Mars",
+			"a1": "TOTAL RECALL"
+		},
+		{
+			"id": "personnality_2",
+			"d1": "je suis le 8e de 10 enfants",
+			"d2": "je souffre de dysmorphophobie",
+			"d3": "j'ai connu mes débuts en chantant avec mes frères",
+			"d4": "je suis l’artiste le plus titré de tous les temps",
+			"d5": "je suis le king de la pop",
+			"a1": "MICKAEL JACKSON",
+			"a2": "JACKSON"
+		},
+		{
+			"id": "the_bad_guy",
+			"d1": "je suis le maître du crime, un psychopate",
+			"d2": "ma première apparition dans une bd est en 1940",
+			"d3": "j'ai un sens déformé et sadique de l'humour",
+			"d4": "j'ai été incarné au cinema par Cesar Romero, Jack Nicholson, Heath Ledger, Jared Leto",
+			"d5": "je suis le pire ennemie de Batman",
+			"a1": "LE JOCKER",
+			"a2": "JOCKER"
+		},
+		{
+			"id": "serie_1",
+			"d1": "Je porte le nom de mon héro qui est un ancien combattant du Viêt Nam",
+			"d2": "Mes premières diffusions sur CBS ont été de décembre 1980 à  mai 1988",
+			"d3": "Mon héro s'occupe désormais de la sécurité d'une des propriétés du célèbre écrivain de polars Robin Masters située à Oahu dans l'archipel d'Hawaï",
+			"d4": "Mon héro partage le domaine avec Jonathan Quayle Higgins III, un majordome britannique rigide, ancien soldat de l'armée des Indes",
+			"d5": "Tom Selleck interprète le héro principal",
+			"a1": "MAGNUM",
+			"a2": "MAGNUM PI"
+		},
+		{
+			"id": "film_2",
+			"d1": "je suis un film de guerre sorti en 1987",
+			"d2": "je m'inspire du film le Merdier (The Short Timers) de Gustav Hasford",
+			"d3": "je suis scindé en 2 parties:l'entrainement à Paris Island et la guerre du Viêt Nam",
+			"d4": "mon réalisateur est Stanley Kubrick",
+			"d5": "mon titre fait référence à un type de balle blindée",
+			"a1": "FULL METAL JACKET"
+		},
+		{
+			"id": "dessin_1",
+			"d1": "au Japon, on m'appelle horimono",
+			"d2": "pour les maoris, je servais à différencier les individus selon leur rang social",
+			"d3": "je viens de l'expression tahitienne 'Ta-atuas', 'ta' signifie dessin et 'atua' esprit",
+			"d4": "on me fait avec un dermographe",
+			"d5": "je suis un dessin permanent sur la peau",
+			"a1": "TATOUAGE"
+		},
+		{
+			"id": "artiste_1",
+			"d1": "je suis né le 6 aout 1928 à Pittsburgh et mort le 22 février 1987 à New York",
+			"d2": "le 3 juin 1968, une féministe essaye de me tuer car j'ai jeté son manuscrit",
+			"d3": "je suis le producteur des Velvet Underground",
+			"d4": "mon atelier d'artiste est la Factory",
+			"d5": "mon oeuvre Campbell's Soup Can est une icone du pop art",
+			"a1": "ANDY WARHOL",
+			"a2": "WARHOL"
+		},
+		{
+			"id": "artiste_2",
+			"d1": "je suis né le 22 décembre 1960 à Brooklyn et mort le 12 aout 1988 à Manhattan",
+			"d2": "en 1982, je rencontre Andy Warhol, j'avais tout fait pour le rencontrer afin de devenir célèbre",
+			"d3": "je suis pionner de la mouvance underground",
+			"d4": "pendant 2 ans j'était en couple avec Madonna, même si ma plus grande relation fut avec Suzanne Mallouk",
+			"d5": "je signe mes graffitis sous le nom SAMO (same old shit)",
+			"a1": "JEAN-MICHEL BASQUIAT",
+			"a2": "BASQUIAT"
+		},
+		{
+			"id": "troupe_1",
+			"d1": "notre oeuvre fondatrice est 'Flying Circus'",
+			"d2": "notre humour prend ses racines dans le burlesque absurde",
+			"d3": "nos sketches n'ont pas souvent de chute",
+			"d4": "notre premier long métrage est 'Sacré Graal'",
+			"d5": "nos 6 membres sont Graham Chapman, John Cleese, Eric Idle, Michael Palin, Terry Jones et Terry Gilliam",
+			"a1": "MONTY PYTHON"
+		},
+		{
+			"id": "festival_1",
+			"d1": "je suis inauguré en juillet 1999",
+			"d2": "je me déroule dans l'ouest parisien",
+			"d3": "mes scènes principales se nomment 'Paris' et 'Bagatelle'",
+			"d4": "je suis installé au sein de l'hippodrome de Longchamps",
+			"d5": "je réuni des fonds pour les associations luttant contre le SIDA",
+			"a1": "SOLIDAYS"
+		},
+		{
+			"id": "festival_2",
+			"d1": "ma première édition fût en juin 2006",
+			"d2": "je suis dans la région de Nantes",
+			"d3": "mes scènes principales sont 'Mainstage 1' et 'Mainstage 2",
+			"d4": "je me déroule à Clisson",
+			"d5": "ma spécialité est de recevoir des groupes de Metal, Punk..",
+			"a1": "HELLFEST",
+			"a2": "HELFEST FESTIVAL"
+		},
+		{
+			"id": "festival_3",
+			"d1": "je ne suis pas vraiment un festival, je suis un rassemblement d'une communauté",
+			"d2": "je ressemble a une utopie temporaire, ",
+			"d3": "ma cité se nomme Black Rock City",
+			"d4": "je suis dans le désert de Black Rock",
+			"d5": "je mets le feu à un mannequin géant",
+			"a1": "BURNING MAN"
+		},
+		{
+			"id": "fete_1",
+			"d1": "mes premières danses officielles étaient en 1676 à Mardi Gras",
+			"d2": "les 3 joyeuses marquent le début des festivités",
+			"d3": "ma principale règle est que chaque participants doit venir déguisé",
+			"d4": "dans mes rues, vous entendrez la cantate à Jean Bart",
+			"d5": "la base de la bande, c'est la ligne",
+			"a1": "CARNAVAL DE DUNKERQUE"
+		},
+		{
+			"id": "magazine_1",
+			"d1": "je suis un magazine français de bd créé en février 1969",
+			"d2": "je suis le successeur de 'Vaillant'",
+			"d3": "je lance des séries cultes comme Corto Maltese, Rahan, Gai-Luron ou Léonard",
+			"d4": "je suis lié au parti communiste français, mais j'évite le bourrage de crâne politique",
+			"d5": "ma vente inclus un gadget",
+			"a1": "PIF GADGET"
+		},
+		{
+			"id": "livre_1",
+			"d1": "mon auteur est Irvine Welsh, j'ai été publié en 1993",
+			"d2": "mon héros principal est Mark Renton alias Rent Boy",
+			"d3": "mes autres personnages sont SickBoy, Spud, Begbie",
+			"d4": "j'ai été adapté au cinéma en 1996 par Danny Boyle ",
+			"d5": "je raconte l'histoire de jeunes écossais héroïnomanes",
+			"a1": "TRAINSPOTTING"
+		},{
+			"id": "livre_2",
+			"d1": "mon auteur est Hunter S. Thompson, j'ai été publié en 1972",
+			"d2": "mon personnage principal est Raoul Duke",
+			"d3": "mon autre personnage est maître Gonzo",
+			"d4": "j'ai été adapté au cinéma par Terry Gilliam en 1998, avec Johnny Depp",
+			"d5": "je raconte le voyage d'un journaliste et de son avocat qui se livrent à une frénétique consommation de drogues diverses",
+			"a1": "LAS VEGAS PARANO",
+			"a2": "FEAR AND LOATHING IN LAS VEGAS"
+		},
+		{
+			"id": "serie_2",
+			"d1": "je suis une série TV américaine créée par franck Lupo et Stephen J. Cannell",
+			"d2": "je suis diffusée la première fois sur NBC du 23 janvier 1983 et sur TF1 le 1er juillet 1984",
+			"d3": "mes protagonistes sont des vétérans du Viet Nam en cavale pour avoir pillé la banque d'Hanoï",
+			"d4": "mes protagonistes composent un quatuor qui traverse l' Amérique au volant d'un GMC Vandura",
+			"d5": "Futé, Looping, Hannibal et Baracuda sont mes personnages principaux",
+			"a1": "L'AGENCE TOUS RISQUES",
+			"a2": "AGENCE TOUS RISQUE",
+			"a3": "A TEAM"
+		},
+		{
+			"id": "jeu_video_1",
+			"d1": "ma série de jeux vidéo est lancée sur PC en 1997 par DMA Design, société de développement écossaise, et en 1998 sur PS1",
+			"d2": "mon troisième opus sorti en 2001 sur PS2me fait passer de la vue aérienne à la 3D, me propulsant au rang de jeu culte",
+			"d3": "extrémement controversé, dès 1997 l'avocat Jack Thompson part en guerre contre mon distributeur Take Two",
+			"d4": "je suis un monde ouvert dans lequel mon personnage effectue des activités criminelles",
+			"d5": "Sam et Dan Houser sont les patrons emblématiques de mon éditeur: Rockstar North",
+			"a1": "GTA"
+		}
+	]
+}

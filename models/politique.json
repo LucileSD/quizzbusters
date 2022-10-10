@@ -1,0 +1,71 @@
+{
+	"politique": [
+		{
+			"id": "institution",
+			"d1": "je suis issu du comité Fouchet de 1961",
+			"d2": "j'ai été fondé en 1974",
+			"d3": "on y parle anglais, français, allemand",
+			"d4": "mes membres sont 27 chefs d'Etat",
+			"d5": "je suis une institution de l'Union européenne",
+			"a1": "CONSEIL EUROPEEN"
+		},
+		{
+			"id": "homme politique_1",
+			"d1": "je suis né le 20 avril 1808",
+			"d2": "j'ai dû quitter la France après ma tentative de coup d'état à Strasbourg en 1836",
+			"d3": "j'ai perdu contre la Prusse en 1870 et perdu l'Alsace et la Lorraine",
+			"d4": "j'ai été président de la République puis prince président",
+			"d5": "je suis le neveu de Napoleon Ier",
+			"a1": "NAPOLEON III",
+			"a2": "NAPOLEON 3"
+		},
+		{
+			"id": "homme politique_2",
+			"d1": "je suis né le 26 octobre 1916 à Janac",
+			"d2": "j'était Ier ministre de Pierre Mendès France",
+			"d3": "l'élection présidentielle de 1965 m'a vu perdre au second tour contre Charles de Gaulle",
+			"d4": "j'ai interdit la peine de mort",
+			"d5": "j'ai été président de la 5e République de 1981 à 1995",
+			"a1": "MITTERRAND",
+			"a2": "FRANCOIS MITTERAND"
+		},
+		{
+			"id": "geographie_1",
+			"d1": "j'ai vu le jour le 19 novembre 1926 avec 6 membres",
+			"d2": "les dominions sont mes états membres",
+			"d3": "je fus établi comme une association d'États indépendants et souverains, « librement associés » et égaux, mais tous pour la couronne",
+			"d4": "je suis aujourd'hui composé de 56 États membres qui sont presque tous d'anciens territoires de l'Empire britannique",
+			"d5": "la reine Elizabet II en est la cheffe",
+			"a1": "COMMONWEALTH",
+			"a2": "COMMONWEALTH OF NATIONS"
+		},
+		{
+			"id": "guerre_1",
+			"d1": "je me déroule de novembre 1955 à avril 1975",
+			"d2": "j'opposé le sud et le nord de mon pays",
+			"d3": "le nord était soutenu par le bloc de l'est et la Chine et le sud par les Etats-unis",
+			"d4": "j'ai poussé à provoquer la guerre civile cambodgienne",
+			"d5": "je suis aussi appelée guerre des dix mille jours ou deuxième guerre d'Indochine",
+			"a1": "GUERRE DU VIET NAM",
+			"a2": "VIET NAM"
+		},
+		{
+			"id": "science_1",
+			"d1": "je suis la science qui étudie les interactions des êtres vivants entre eux et avec leur milieu",
+			"d2": "j'appelle à la transformation du modèle économique et social pour remettre à plat les relations entre l'homme et son environnement",
+			"d3": "mon mouvement est fondée sous l'influence de Léon Tolstoï en Europe, mêlant retour à la nature, végétarisme, non-violence",
+			"d4": "je cherche à développer l'état de conscience de l'empreinte polluante de l'être humain sur le milieu",
+			"d5": "mon bord politique est représenté par le vert",
+			"a1": "ECOLOGIE"
+		},
+		{
+			"id": "organisation_1",
+			"d1": "je suis signé par traité le 4 avril 1949",
+			"d2": "ma vocation initiale est d'assurer la sécurité de l'Europe",
+			"d3": "je suis une alliance militaire",
+			"d4": "on m'appelle aussi l'Alliance atlantique",
+			"d5": "je suis l'Organisation du traité de l'Atlantique Nord",
+			"a1": "OTAN"
+		}
+	]
+}

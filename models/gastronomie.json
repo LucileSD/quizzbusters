@@ -1,0 +1,43 @@
+{
+	"gastronomie": [
+		{
+			"id": "plat_1",
+			"d1": "dans l'Antiquité romaine, on pouvait m'appeler la tarte d'Apicius",
+			"d2": "je suis l'une des plus anciennes recettes écrites connues du 16e siècle",
+			"d3": "je suis une recette à base de couches alternées",
+			"d4": "au Moyen-age, on m'appelle en latin 'lasanis'",
+			"d5": "j'alterne les pâtes en forme de feuilles rectangulaires, la sauce bolognaise, le parmesan, la béchamel",
+			"a1": "LASAGNES",
+			"a2": "LES LASAGNES"
+		},
+		{
+			"id": "plat_2",
+			"d1": "mon nom est dérivé du mot charbon",
+			"d2": "je consiste à braiser à l'étouffée des morceaux de boeuf dans une cocotte avec un peu de cassonade",
+			"d3": "je suis une variante du boeuf bourguignon",
+			"d4": "dans ma cocotte, il y aussi de la bière et des oignons",
+			"d5": "je suis un plat en sauce que l'on mange avec des frites",
+			"a1": "CARBONADE FLAMANDE",
+			"a2": "LA CARBONADE FLAMANDE"
+		},
+		{
+			"id": "plat_3",
+			"d1": "j'apparu au début du 20e siècle, je porte le nom d'un apothicaire du 18e siècle",
+			"d2": "je suis dans de nombreuses brasseries parisiennes",
+			"d3": "je contiens les restes d'un morceau de viande qui est hachée",
+			"d4": "je suis recouvert d'un écrasé de pomme de terre et gratiné au four",
+			"d5": "l'apothicaire est Antoine-Augustin Parmentier",
+			"a1": "HACHIS PARMENTIER"
+		},
+		{
+			"id": "dessert_1",
+			"d1": "je suis originaire de l'italie du 16e siècle où l'on m'appeler 'neige de lait'",
+			"d2": "on associe aussi mon origine à François Vatel",
+			"d3": "je n'en suis pas vraiment une, si je suis dans une bombe sous pression UHT",
+			"d4": "je suis une crème fouettée sucrée",
+			"d5": "François Vatel était le maître d'hôtel du château de Chantilly",
+			"a1": "CHANTILLY",
+			"a2": "CREME CHANTILLY"
+		}
+	]
+}

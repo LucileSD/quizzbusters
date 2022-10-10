@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<link rel="stylesheet" href="game_body.css">
-		<link rel="stylesheet" href="header.css">
-		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="../static/styles/game_body.css">
+		<link rel="stylesheet" href="../static/styles/header.css">
+		<link rel="stylesheet" href="../static/styles/footer.css">
 		<link href="//db.onlinewebfonts.com/c/3066b11123e63381b8e2aa554b18bf32?family=Bauhaus+93" rel="stylesheet" type="text/css"/>
 		<meta charset="utf-8">
 		<title>QUIZZ BUSTERS</title>
@@ -22,19 +22,21 @@
 		<div class="play">
 			<div class="points"></div>
 			<div class="clue">
-				<div id="category">Catégorie:</div>
-				<div id="theme">Thème:</div>
+				{% for i in listOfChosenEnigma %}
+				<div id="category">Catégorie: {{ i[0] }}</div>
+				<div id="theme">Thème: {{ i[1] }}</div>
 				<div id="roll">
 					<ul>
-						<li>Indice 1:</li>
-						<li>Indice 2:</li>
-						<li>Indice 3:</li>
-						<li>Indice 4:</li>
-						<li>Indice 3:</li>
-						<li>Réponse:</li>
+						<li>Indice 1: {{ i[2] }}</li>
+						<li>Indice 2: {{ i[3] }}</li>
+						<li>Indice 3: {{ i[4] }}</li>
+						<li>Indice 4: {{ i[5] }}</li>
+						<li>Indice 5: {{ i[6] }}</li>
+						<li>Réponse: {{ i[7] }}</li>
 					</ul>
+				{% endfor %}
 				</div>
-				<img class="buzzer" src="little_buzzer.jpg">
+				<img class="buzzer" src="../static/images/little_buzzer.jpg">
 				<div id="answer">REPONSE</div>
 			</div>
 		</div>
