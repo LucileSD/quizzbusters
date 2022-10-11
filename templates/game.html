@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="../static/styles/footer.css">
 		<link href="//db.onlinewebfonts.com/c/3066b11123e63381b8e2aa554b18bf32?family=Bauhaus+93" rel="stylesheet" type="text/css"/>
 		<meta charset="utf-8">
+		<script src="/enigme.js"></script>
 		<title>QUIZZ BUSTERS</title>
 	</head>
 	<body>
@@ -14,32 +15,32 @@
 				<h1 class="titre"><a href="index.html">QUIZZ BUSTERS</a>&nbsp; &nbsp; &nbsp;Qui sera le meilleur?</h1>
 			</div>
 			<div class="info_user">
-				<h2 class="me"><a href="/compte">Mon Compte</a></h2>
-				<h2 class="login"><a href="/login">se connecter</a></h2>
+				<h2 class="me"><a href="compte.html">Mon Compte</a></h2>
+				<h2 class="login"><a href="login.html">se connecter</a></h2>
 			</div>
 		</header>
-		<div id="regle"><a href="/regle">Comment jouer</a></div>
+		<div id="regle"><a href="regle.html">Comment jouer</a></div>
 		<div class="play">
 			<div class="points"></div>
 			<div class="clue">
-				<div id="category">Catégorie: </div>
-				<div id="theme">Thème: </div>
+				<div id="category">Catégorie: <p id="cat"></p></div>
+				<div id="theme">Thème: <p id="th"></p></div>
 				<div id="roll">
 					<ul>
-						<li>Indice 1: </li>
-						<li>Indice 2: </li>
-						<li>Indice 3: </li>
-						<li>Indice 4: </li>
-						<li>Indice 5: </li>
-						<li>Réponse: </li>
+						<li>Indice 1: <p id="indice1"></p></li>
+						<li>Indice 2: <p id="indice2"></p></li>
+						<li>Indice 3: <p  id="indice3"></p></li>
+						<li>Indice 4: <p id="indice4"></p></li>
+						<li>Indice 5: <p  id="indice5"></p></li>
+						<li>Réponse: <p id="reponse"></p></li>
 					</ul>
 				</div>
-				<img class="buzzer" src="../static/images/little_buzzer.jpg">
+				<img class="answerbuzzer" src="../static/images/little_buzzer.jpg">
 				<div id="answer">REPONSE</div>
 			</div>
 		</div>
 		<footer>
-			<p><a href="/qui">Qui sommes-nous?</a></p>
+			<p><a href="qui.html">Qui sommes-nous?</a></p>
 		</footer>
 	</body>
 </html>

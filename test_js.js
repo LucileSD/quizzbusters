@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+import FindEnigma from './enigme.js'
 function test(){
-  list = findEnigma();
+  list = FindEnigma();
   console.log(list);
 }
+test();
