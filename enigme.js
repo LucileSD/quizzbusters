@@ -23,21 +23,9 @@ async function FindEnigma() {
     let categor = document.getElementById("cat");
     let parag = document.createElement('p');
     categor.textContent = valuesIndice[0];
-    b.insertBefore(categor, parag);*/
-    /*document.getElementById("cat").innerHTML = valuesIndice[0];
-    document.getElementById("th").innerHTML = valuesIndice[1];
-    document.getElementById("indice1").innerHTML = valuesIndice[2];
+    b.insertBefore(categor, parag);
     await setTimeout(5000);
-    document.getElementById("indice2").innerHTML = valuesIndice[3];
-    await setTimeout(5000);
-    document.getElementById("indice3").innerHTML = valuesIndice[4];
-    await setTimeout(5000);
-    document.getElementById("indice4").innerHTML = valuesIndice[5];
-    await setTimeout(5000);
-    document.getElementById("indice5").innerHTML = valuesIndice[6];
-    await setTimeout(5000);
-    document.getElementById("reponse").innerHTML = valuesIndice[7];
-    await setTimeout(5000);
+    
     valuesIndice.clear();*/
   }
 }
