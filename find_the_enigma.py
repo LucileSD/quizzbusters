@@ -30,6 +30,14 @@ def enigmaChosen():
     clue4 = enigmaChosen.get("d4")
     clue5 = enigmaChosen.get("d5")
     answer = enigmaChosen.get("a1")
-    return category, theme, clue1, clue2, clue3, clue4, clue5, answer
+    dictResult = {'category': category,
+                  "theme": theme,
+                  "clue1": clue1,
+                  "clue2": clue2,
+                  "clue3": clue3,
+                  "clue4": clue4,
+                  "clue5": clue5,
+                  "answer": answer}
+    return dictResult
 
 

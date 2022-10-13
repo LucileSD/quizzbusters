@@ -5,8 +5,9 @@
 		<link rel="stylesheet" href="../static/styles/header.css">
 		<link rel="stylesheet" href="../static/styles/footer.css">
 		<link href="//db.onlinewebfonts.com/c/3066b11123e63381b8e2aa554b18bf32?family=Bauhaus+93" rel="stylesheet" type="text/css"/>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='game.js') }}"></script>
 		<meta charset="utf-8">
-		<script src="/enigme.js"></script>
 		<title>QUIZZ BUSTERS</title>
 	</head>
 	<body>
@@ -23,16 +24,16 @@
 		<div class="play">
 			<div class="points"></div>
 			<div class="clue">
-				<div id="category">Catégorie: <p id="cat"></p></div>
-				<div id="theme">Thème: <p id="th"></p></div>
+				<div id="category-label">Catégorie: <span id="category-value"></span></div>
+				<div id="theme-label">Thème: <span id="theme-value"></span></div>
 				<div id="roll">
-					<ul>
-						<li>Indice 1: <p id="indice1"></p></li>
-						<li>Indice 2: <p id="indice2"></p></li>
-						<li>Indice 3: <p  id="indice3"></p></li>
-						<li>Indice 4: <p id="indice4"></p></li>
-						<li>Indice 5: <p  id="indice5"></p></li>
-						<li>Réponse: <p id="reponse"></p></li>
+					<ul id="clues">
+						<li>Indice 1: <span id="indice1"></span></li>
+						<li>Indice 2: <span id="indice2"></span></li>
+						<li>Indice 3: <span  id="indice3"></span></li>
+						<li>Indice 4: <span id="indice4"></span></li>
+						<li>Indice 5: <span  id="indice5"></span></li>
+						<li>Réponse: <span id="reponse"></span></li>
 					</ul>
 				</div>
 				<img class="answerbuzzer" src="../static/images/little_buzzer.jpg">

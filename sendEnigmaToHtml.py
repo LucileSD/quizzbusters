@@ -2,10 +2,9 @@
 """
     send information for HRML page game
 """
-from find_the_enigma import *
-from flask import Flask, render_template
-import time
-
+from find_the_enigma import enigmaChosen
+from flask import Flask, render_template, Response, make_response
+import json
 
 app = Flask(__name__)
 
@@ -36,41 +35,16 @@ def who():
 
 @app.route("/game", strict_slashes=False)
 @app.route("/game.html", strict_slashes=False)
-def giveClue():
-    enigma0 = enigmaChosen()
-    enigma1 = enigmaChosen()
-    enigma2 = enigmaChosen()
-    enigma3 = enigmaChosen()
-    enigma4 = enigmaChosen()
-    enigma5 = enigmaChosen()
-    enigma6 = enigmaChosen()
-    enigma7 = enigmaChosen()
-    enigma8 = enigmaChosen()
-    enigma9 = enigmaChosen()
+def game():
+    return render_template("game.html")
 
-    listOfChosenEnigma = [enigma0, enigma1, enigma2, enigma3, enigma4,
-                          enigma5, enigma6, enigma7, enigma8, enigma9]
-    
-    for i in listOfChosenEnigma:
-        categorie = i[0]
-        theme = i[1]
-        indice1 = i[2]
-        time.sleep(5)
-        indice2 = i[3]
-        time.sleep(5)
-        indice3 = i[4]
-        time.sleep(5)
-        indice4 = i[5]
-        time.sleep(5)
-        indice5 = i[6]
-        time.sleep(5)
-        reponse = i[7]
-        time.sleep(5)
-        os.system("clear")
-
- 
-    return render_template("game.html", categorie=categorie)
-
+@app.route("/enigma.json", strict_slashes=False)
+def enigmaJson():
+    dictOfEnigma = enigmaChosen()
+    jsonObject = json.dumps(dictOfEnigma, ensure_ascii=False)
+    response = make_response(jsonObject)
+    response.headers['Content-Type'] = 'application/json; charset=utf-8'
+    return response
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5500)
