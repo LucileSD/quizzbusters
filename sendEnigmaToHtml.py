@@ -40,8 +40,8 @@ def game():
 
 @app.route("/enigma.json", strict_slashes=False)
 def enigmaJson():
-    dictOfEnigma = enigmaChosen()
-    jsonObject = json.dumps(dictOfEnigma, ensure_ascii=False)
+    """get one enigma"""
+    jsonObject = json.dumps(enigmaChosen(), ensure_ascii=False)
     response = make_response(jsonObject)
     response.headers['Content-Type'] = 'application/json; charset=utf-8'
     return response
