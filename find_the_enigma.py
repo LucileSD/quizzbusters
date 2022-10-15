@@ -5,7 +5,6 @@
 import json
 import os
 import random
-import time
 
 
 """list json file and extrat one file
@@ -40,4 +39,10 @@ def enigmaChosen():
                   "answer": answer}
     return dictResult
 
-
+def enigmasChosen():
+    """a suit of 10 enigmas"""
+    enigmasList = []
+    for i in range(10):
+        enigmasList.append(enigmaChosen())
+    dictResults = {'listOfEnigma': enigmasList}
+    return dictResults

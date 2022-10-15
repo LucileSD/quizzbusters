@@ -2,7 +2,7 @@
 """
     send information for HRML page game
 """
-from find_the_enigma import enigmaChosen
+from find_the_enigma import enigmaChosen, enigmasChosen
 from flask import Flask, render_template, Response, make_response
 import json
 
@@ -45,6 +45,14 @@ def enigmaJson():
     response = make_response(jsonObject)
     response.headers['Content-Type'] = 'application/json; charset=utf-8'
     return response
+
+@app.route("/tenEnigma.json", strict_slashes=False)
+def multipleEnigmaJson():
+    """get 10 enigmas"""
+    jsonObj = json.dumps(enigmasChosen(), ensure_ascii=False)
+    lastresponse = make_response(jsonObj)
+    lastresponse.headers['Content-Type'] = 'application/json; charset=utf-8'
+    return lastresponse
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5500)
