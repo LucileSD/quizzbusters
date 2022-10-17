@@ -29,14 +29,39 @@ def enigmaChosen():
     clue4 = enigmaChosen.get("d4")
     clue5 = enigmaChosen.get("d5")
     answer = enigmaChosen.get("a1")
-    dictResult = {'category': category,
+    if (enigmaChosen.get("a3")):
+        answer2 = enigmaChosen.get("a2")
+        answer3 = enigmaChosen.get("a3")
+        dictResult = {'category': category,
                   "theme": theme,
                   "clue1": clue1,
                   "clue2": clue2,
                   "clue3": clue3,
                   "clue4": clue4,
                   "clue5": clue5,
-                  "answer": answer}
+                  "answer": answer,
+                  "answer2": answer2,
+                  "answer3": answer3}
+    elif (enigmaChosen.get("a2")):
+        answer2 = enigmaChosen.get("a2")
+        dictResult = {'category': category,
+                  "theme": theme,
+                  "clue1": clue1,
+                  "clue2": clue2,
+                  "clue3": clue3,
+                  "clue4": clue4,
+                  "clue5": clue5,
+                  "answer": answer,
+                  "answer2": answer2}
+    else:
+        dictResult = {'category': category,
+                    "theme": theme,
+                    "clue1": clue1,
+                    "clue2": clue2,
+                    "clue3": clue3,
+                    "clue4": clue4,
+                    "clue5": clue5,
+                    "answer": answer}
     return dictResult
 
 def enigmasChosen():

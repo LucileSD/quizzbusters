@@ -56,7 +56,7 @@
 			"d2": "je suis aussi une condamnation aux travaux forcés",
 			"d3": "les rames sont actionnées par la force musculaire lors des manoeuvres d'attaques",
 			"d4": "je suis un type de navire à rames et voiles latines sur un, deux ou trois mâts à antennes",
-			"d5": "je suis mue par de galériens",
+			"d5": "je suis mue par des galériens",
 			"a1": "GALERE"
 		},
 		{
@@ -67,7 +67,8 @@
 			"d4": "mon père est Joseph et ma mère Marie",
 			"d5": "je suis le fils de Dieu",
 			"a1": "JESUS",
-			"a2": "JESUS CHRIST"
+			"a2": "JESUS CHRIST",
+			"a3": "JC"
 		},
 		{
 			"id": "annee_1",
@@ -82,7 +83,7 @@
 			"id": "personne_4",
 			"d1": "je suis un militant anti-fasciste, anti-colonialiste",
 			"d2": "je suis célèbre pour mes oraisons funèbres comme celle pour Jean Moulin",
-			"d3": "résistant, j'étais proche du charles de Gaulle",
+			"d3": "résistant, j'étais proche du général Charles de Gaulle",
 			"d4": "je suis le tout premier ministre de la culture",
 			"d5": "je suis l'auteur de 'La Condition Humaine'",
 			"a1": "MALRAUX",

@@ -34,6 +34,13 @@ body {
 	flex-direction: column;
 }
 .answerbuzzer {
-	width: 250px;
+	width: 10px;
+	height: 130px;
 	margin-left: 220px;
+	padding: 0;
+	background: rgb(8, 43, 95);
+	border: 0;
+}
+#buzette {
+	width: 350px;
 }
