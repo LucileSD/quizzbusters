@@ -40,7 +40,6 @@ function clearElement(divSelector, delay=30*1000) {
 function displayElement(data) {
   //display elements of one enigma in the screen
   const delay = 5*1000; //delay of 5 seconds
-  console.log(data);
   /*$.map(data.listOfEnigma, function(res) {
     $('#category-value').text(res.category); //display category
     $('#theme-value').text(res.theme); // display theme
@@ -72,17 +71,18 @@ function displayElement(data) {
       setTimeout(() => $('#reponse').text(data.listOfEnigma[i].answer), delay*5);
     clearAllElement();
     */
-    /*for (item of data.listOfEnigma) {
-      $('#category-value').text(item.category); //display category
-      $('#theme-value').text(item.theme); // display theme
-      $('#indice1').text(item.clue1); //display clue 1
+    /*for(let i = 0; i < 10; i++) {
+      $('#category-value').text(data.listOfEnigma[i].category); //display category
+      $('#theme-value').text(data.listOfEnigma[i].theme); // display theme
+      $('#indice1').text(data.listOfEnigma[i].clue1); //display clue 1
       // sleep 5 secondes and display clue
-      setTimeout(() => $('#indice2').text(item.clue2), delay);
-      setTimeout(() => $('#indice3').text(item.clue3), delay*2);
-      setTimeout(() => $('#indice4').text(item.clue4), delay*3);
-      setTimeout(() => $('#indice5').text(item.clue5), delay*4);
-      setTimeout(() => $('#reponse').text(item.answer), delay*5);
-      clearAllElement();}*/
+      setTimeout(() => $('#indice2').text(data.listOfEnigma[i].clue2), delay);
+      setTimeout(() => $('#indice3').text(data.listOfEnigma[i].clue3), delay*2);
+      setTimeout(() => $('#indice4').text(data.listOfEnigma[i].clue4), delay*3);
+      setTimeout(() => $('#indice5').text(data.listOfEnigma[i].clue5), delay*4);
+      setTimeout(() => $('#reponse').text(data.listOfEnigma[i].answer), delay*5);
+      clearAllElement();
+    }*/
   $('#category-value').text(data.category); //display category
 
   $('#theme-value').text(data.theme); // display theme
@@ -96,18 +96,4 @@ function displayElement(data) {
   setTimeout(() => $('#indice5').text(data.clue5), delay*4);
   setTimeout(() => $('#reponse').text(data.answer), delay*5);
   clearAllElement()
-
-  /*$('#category-value').text(data.listOfEnigma[1].category); //display category
-
-  $('#theme-value').text(data.listOfEnigma[1].theme); // display theme
-
-  $('#indice1').text(data.listOfEnigma[1].clue1); //display clue 1
-
-  // sleep 5 secondes and display clue
-  setTimeout(() => $('#indice2').text(data.listOfEnigma[1].clue2), delay);
-  setTimeout(() => $('#indice3').text(data.listOfEnigma[1].clue3), delay*2);
-  setTimeout(() => $('#indice4').text(data.listOfEnigma[1].clue4), delay*3);
-  setTimeout(() => $('#indice5').text(data.listOfEnigma[1].clue5), delay*4);
-  setTimeout(() => $('#reponse').text(data.listOfEnigma[1].answer), delay*5);
-  clearAllElement();*/
 }
