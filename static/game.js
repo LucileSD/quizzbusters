@@ -1,11 +1,23 @@
 $(document).ready(() => {
   // get one enigma in random
-  $.get({
-    url: '/tenEnigma.json',
+  const delay = 5*1000;
+  setTimeout(() => 
+    $.get({
+    url: '/enigma.json',
     success: function(data) {
-      displayElement(data)
+      setTimeout(() => displayElement(data), 100);
     }
-  })
+  }), 500
+  )
+  for (let i = 1; i < 10; i++) {
+  setTimeout(() => 
+    $.get({
+      url: '/enigma.json',
+      success: function(data) {
+        setTimeout(() => displayElement(data), 100);
+      }
+    }), delay*(7*i)
+  )}
 });
 
 function clearAllElement() {
@@ -41,8 +53,15 @@ function displayElement(data) {
     setTimeout(() => $('#reponse').text(res.answer), delay*5);
     clearAllElement();
     })*/
-    for(let i = 0; i < 10; i++) {
-      $('#category-value').text(data.listOfEnigma[i].category); //display category
+    /*$("#category-value").text(data.listOfEnigma[0].category)
+    $(("#category-value")).queue(function() {
+      $(this).text(data.listOfEnigma[1].category).dequeue();
+    });
+    $("#theme-value").text(data.listOfEnigma[0].theme)
+    $(("#theme-value")).queue(function() {
+      $(this).text(data.listOfEnigma[1].theme).dequeue();
+    })
+      /*$('#category-value').text(data.listOfEnigma[i].category); //display category
       $('#theme-value').text(data.listOfEnigma[i].theme); // display theme
       $('#indice1').text(data.listOfEnigma[i].clue1); //display clue 1
       // sleep 5 secondes and display clue
@@ -51,9 +70,9 @@ function displayElement(data) {
       setTimeout(() => $('#indice4').text(data.listOfEnigma[i].clue4), delay*3);
       setTimeout(() => $('#indice5').text(data.listOfEnigma[i].clue5), delay*4);
       setTimeout(() => $('#reponse').text(data.listOfEnigma[i].answer), delay*5);
-      clearAllElement();
-    }
-    /*$.each(data.listOfEnigma, function(i, item) {
+    clearAllElement();
+    */
+    /*for (item of data.listOfEnigma) {
       $('#category-value').text(item.category); //display category
       $('#theme-value').text(item.theme); // display theme
       $('#indice1').text(item.clue1); //display clue 1
@@ -63,8 +82,8 @@ function displayElement(data) {
       setTimeout(() => $('#indice4').text(item.clue4), delay*3);
       setTimeout(() => $('#indice5').text(item.clue5), delay*4);
       setTimeout(() => $('#reponse').text(item.answer), delay*5);
-      clearAllElement();*/
-  /*$('#category-value').text(data.category); //display category
+      clearAllElement();}*/
+  $('#category-value').text(data.category); //display category
 
   $('#theme-value').text(data.theme); // display theme
 
@@ -75,5 +94,20 @@ function displayElement(data) {
   setTimeout(() => $('#indice3').text(data.clue3), delay*2);
   setTimeout(() => $('#indice4').text(data.clue4), delay*3);
   setTimeout(() => $('#indice5').text(data.clue5), delay*4);
-  setTimeout(() => $('#reponse').text(data.answer), delay*5);*/
+  setTimeout(() => $('#reponse').text(data.answer), delay*5);
+  clearAllElement()
+
+  /*$('#category-value').text(data.listOfEnigma[1].category); //display category
+
+  $('#theme-value').text(data.listOfEnigma[1].theme); // display theme
+
+  $('#indice1').text(data.listOfEnigma[1].clue1); //display clue 1
+
+  // sleep 5 secondes and display clue
+  setTimeout(() => $('#indice2').text(data.listOfEnigma[1].clue2), delay);
+  setTimeout(() => $('#indice3').text(data.listOfEnigma[1].clue3), delay*2);
+  setTimeout(() => $('#indice4').text(data.listOfEnigma[1].clue4), delay*3);
+  setTimeout(() => $('#indice5').text(data.listOfEnigma[1].clue5), delay*4);
+  setTimeout(() => $('#reponse').text(data.listOfEnigma[1].answer), delay*5);
+  clearAllElement();*/
 }
