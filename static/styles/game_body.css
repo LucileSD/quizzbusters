@@ -44,3 +44,16 @@ body {
 #buzette {
 	width: 350px;
 }
+@font-face {
+	font-family: bauhaus;
+	src: url(Bauhaus93_V1.woff);
+}
+.points {
+	color: rgba(243, 180, 8, 0.897);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	font-size: xx-large;
+	font-family: bauhaus;
+}
