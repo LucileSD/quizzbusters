@@ -12,6 +12,7 @@ $(document).ready(() => {
           setTimeout(() => displayElement(data), 100);
           flagAnswer = 0;
           $('#answer').val('');//let empty span answer after one enigma
+          $("#answer").css({"background-color": "white"});
         }
       }), delay*(7*i)
     )
@@ -82,26 +83,31 @@ function buzzerAnswer(data) {
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice5").is(":visible") && $("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 1;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 2;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 3;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 4;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && flagAnswer == 0) {
       count += 5;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
@@ -122,26 +128,31 @@ function buzzerAnswer(data) {
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice5").is(":visible") && $("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 1;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 2;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 3;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
       count += 4;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
     else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && flagAnswer == 0) {
       count += 5;
+      $("#answer").css({"background-color": "green"});
       $("#number_points").text(count);
       flagAnswer = 1;
     }
