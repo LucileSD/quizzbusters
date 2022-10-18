@@ -1,5 +1,5 @@
-let count = 0;
-let flagAnswer = 0;
+let count = 0; //count points
+let flagAnswer = 0; //flag for answer already give or not
 
 $(document).ready(() => {
   // get one enigma in random and loop 10 times
@@ -11,6 +11,7 @@ $(document).ready(() => {
         success: function(data) {
           setTimeout(() => displayElement(data), 100);
           flagAnswer = 0;
+          $('#answer').val('');//let empty span answer after one enigma
         }
       }), delay*(7*i)
     )
