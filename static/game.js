@@ -1,3 +1,6 @@
+let count = 0;
+let flagAnswer = 0;
+
 $(document).ready(() => {
   // get one enigma in random and loop 10 times
   const delay = 5*1000;
@@ -7,6 +10,7 @@ $(document).ready(() => {
         url: '/enigma.json',
         success: function(data) {
           setTimeout(() => displayElement(data), 100);
+          flagAnswer = 0;
         }
       }), delay*(7*i)
     )
@@ -41,40 +45,108 @@ function displayElement(data) {
   $('#theme-value').text(data.theme); // display theme
 
   $('#indice1').text(data.clue1); //display clue 1
-
+  $('#indice2').hide();
+  $('#indice3').hide();
+  $('#indice4').hide();
+  $('#indice5').hide();
+  $('#reponse').hide();
+  $('#indice2').text(data.clue2);
+  $('#indice3').text(data.clue3);
+  $('#indice4').text(data.clue4);
+  $('#indice5').text(data.clue5);
+  $('#reponse').text(data.answer);
   // sleep 5 secondes and display clue
-  setTimeout(() => $('#indice2').text(data.clue2), delay);
- 
-  setTimeout(() => $('#indice3').text(data.clue3), delay*2);
- 
-  setTimeout(() => $('#indice4').text(data.clue4), delay*3);
-
-  setTimeout(() => $('#indice5').text(data.clue5), delay*4);
-
-  setTimeout(() => $('#reponse').text(data.answer), delay*5);
-  buzzerAnswer();
+  setTimeout(() => $('#indice2').show(), delay);
+  setTimeout(() => $('#indice3').show(), delay*2);
+  setTimeout(() => $('#indice4').show(), delay*3);
+  setTimeout(() => $('#indice5').show(), delay*4);
+  setTimeout(() => $('#reponse').show(), delay*5);
+  buzzerAnswer(data);
   clearAllElement()
 }
 
-function buzzerAnswer() {
-  // user answers and click on the buzzer to record the answer
+function buzzerAnswer(data) {
+  // user answers and click on the buzzer to record the answer and give the good numbers of points
   let buzzerclicked;
   let userAnswer;
   $("#answer").keypress(() => {
     //press enter
     if ( event.which == 13 ) {
       buzzerclicked = true;
-      console.log(buzzerclicked);
       userAnswer = $("#answer").val();
-      console.log(userAnswer.toUpperCase());
+      userAnswer = userAnswer.toUpperCase();
+    if ($("#reponse").is(":visible")) {
+      count += 0;
+      $("#number_points").text(count);
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice5").is(":visible") && $("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 1;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 2;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 3;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 4;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && flagAnswer == 0) {
+      count += 5;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else {
+      count += 0;
+      $("#number_points").text(count);
+    }
       }
   });
   $(".answerbuzzer").click(() => {
     //click buzzer
     buzzerclicked = true;
-    console.log(buzzerclicked);
     userAnswer = $("#answer").val();
-    console.log(userAnswer.toUpperCase());
-  });
-  
+    userAnswer = userAnswer.toUpperCase();
+    if ($("#reponse").is(":visible")) {
+      count += 0;
+      $("#number_points").text(count);
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice5").is(":visible") && $("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 1;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 2;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 3;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && ($("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+      count += 4;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else if ((userAnswer === data.answer || userAnswer == data.answer2 || userAnswer == data.answer3) && flagAnswer == 0) {
+      count += 5;
+      $("#number_points").text(count);
+      flagAnswer = 1;
+    }
+    else {
+      count += 0;
+      $("#number_points").text(count);
+    }
+  })
 }
