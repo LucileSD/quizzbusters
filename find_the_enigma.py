@@ -67,7 +67,9 @@ def enigmaChosen():
 def enigmasChosen():
     """a suit of 10 enigmas"""
     enigmasList = []
-    for i in range(10):
-        enigmasList.append(enigmaChosen())
+    while len(enigmasList) < 10:
+        enigma = enigmaChosen()
+        if enigma not in enigmasList:
+            enigmasList.append(enigma)
     dictResults = {'listOfEnigma': enigmasList}
     return dictResults
