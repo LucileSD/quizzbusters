@@ -32,6 +32,8 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	width: 900px;
+	font-size: 1.5em;
 }
 .answerbuzzer {
 	width: 10px;
