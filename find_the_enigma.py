@@ -15,9 +15,9 @@ def enigmaChosen():
         in all the json files
         return one enigma
     """
-    jsonList = os.listdir('./models')
+    jsonList = os.listdir('./questions')
     fileJsonChosen = random.choice(jsonList)
-    with open("./models/" + fileJsonChosen) as f:
+    with open("./questions/" + fileJsonChosen) as f:
         dictOfEnigma = json.load(f)
     category = list(dictOfEnigma.keys())[0]
     listOfEnigma = dictOfEnigma.get(category)
