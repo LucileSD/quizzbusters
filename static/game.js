@@ -36,9 +36,9 @@ function clearAllElement() {
   clearElement('#reponse');
 }
 
-function clearElement(divSelector, delay=30*1000) {
+function clearElement(divSelector) {
   //clear one element of the screen
-  setTimeout(() => $(divSelector).empty(), delay);
+  $(divSelector).empty();
 }
 
 // sleep to permit to give some time for read the clue
@@ -47,7 +47,7 @@ const sleep = m => new Promise(r => setTimeout(r, m));
 async function displayElement(dataItem) {
   //display elements of one enigma in the screen with some wait
   buzzerAnswer(dataItem);
-  
+  console.log(dataItem);
   $('#category-value').text(dataItem.category); //display category
 
   $('#theme-value').text(dataItem.theme); // display theme
