@@ -136,6 +136,7 @@ async function displayElement(dataItem) {
     }
     else {
       count += 0;
+      $("#answer").css({"background-color": "red"});
       $("#number_points").text(count);
     }
   }
