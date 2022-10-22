@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<link rel="stylesheet" href="../static/styles/body.css">
+		<link rel="stylesheet" href="../static/styles/body_login.css">
 		<link rel="stylesheet" href="../static/styles/header.css">
 		<link rel="stylesheet" href="../static/styles/footer.css">
 		<link href="//db.onlinewebfonts.com/c/3066b11123e63381b8e2aa554b18bf32?family=Bauhaus+93" rel="stylesheet" type="text/css"/>
@@ -19,22 +19,18 @@
 				<h2 class="login"><a href="login.html">se connecter</a></h2>
 			</div>
 		</header>
-		<div id="regle"><a href="regle.html">Comment jouer</a></div>
-		<div class="center">
-			<a href="game.html"><img class="buzzer" src="../static/images/buzz.jpg"></a>
-			<div class="result">
-				<h3>Scores de la semaine</h3>
-				<ul>
-					<li>1. score n°1</li>
-					<li>2. score n°2</li>
-					<li>3. score n°3</li>
-					<li>4. score n°4</li>
-					<li>5. score n°5</li>
-				</ul>
+		<div class="user_login">
+			<div class="new_user">
+				<p id="mini_titre">Vous devez créer un compte</p>
+				<form action="{{ url_for('register') }}" method="post">
+					<span class="msg">{{ msg }}</span>
+					<p>Email:</p><input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+					<p>Mot de passe:</p><input type="password" id="password" name="password" placeholder="8 caractères min" required>
+					<p>Nom d'utilisateur:</p><input type="text" id="username" name="username" placeholder="Votre pseudo" required><br>
+					<br>
+					<button>VALIDER</button>
+				</form>
 			</div>
 		</div>
-		<footer>
-			<p><a href="qui.html">Qui sommes-nous?</a></p>
-		</footer>
 	</body>
 </html>

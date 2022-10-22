@@ -22,6 +22,7 @@ async function displayList(dataList) {
     $("#answer").css({"background-color": "white"});
     flagAnswer = 0;
   }
+  $('#end').text("Fin de la partie");
 }
 
 function clearAllElement() {

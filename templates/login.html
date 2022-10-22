@@ -14,6 +14,7 @@
 				<h1 class="titre"><a href="index.html">QUIZZ BUSTERS</a>&nbsp; &nbsp; &nbsp;Qui sera le meilleur?</h1>
 			</div>
 			<div class="info_user">
+				<h2 class="new_account"><a href="registration.html">Créer mon compte</a></h2>
 				<h2 class="me"><a href="compte.html">Mon Compte</a></h2>
 				<h2 class="login"><a href="login.html">se connecter</a></h2>
 			</div>
@@ -21,19 +22,14 @@
 		<div class="user_login">
 			<div class="old_user">
 				<p id="mini_titre">Vous avez déjà un compte</p>
-				<p>Nom d'utilisateur:</p><input type="text" id="name_user" placeholder="Votre pseudo" required>
-				<p>Mot de passe:</p><input type="password" id="pwd_user" placeholder="mot de passe" required><br>
-				<br>
+				<form action="{{ url_for('login') }}" method="post">
+					<div class="msg">{{ msg }}</div>
+					<p>Nom d'utilisateur:</p><input type="text" id="name_user" name="name" placeholder="Votre pseudo" required>
+					<p>Mot de passe:</p><input type="password" id="pwd" name="pwd" placeholder="mot de passe" required><br>
+					<br>
 				<button>VALIDER</button>
+				</form>
 				<p id="oubli">J'ai oublié mon mot de passe</p>
-			</div>
-			<div class="new_user">
-				<p id="mini_titre">Vous devez créer un compte</p>
-				<p>Email:</p><input type="email" id="mail_user" placeholder="exemple@mail.com" required>
-				<p>Mot de passe:</p><input type="password" id="pwd_user" placeholder="8 caractères min" required>
-				<p>Nom d'utilisateur:</p><input type="text" id="name_user" placeholder="Votre pseudo" required><br>
-				<br>
-				<button>VALIDER</button>
 			</div>
 		</div>
 	</body>

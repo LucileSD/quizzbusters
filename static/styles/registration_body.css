@@ -1,0 +1,34 @@
+body {
+	background: rgb(8, 43, 95);
+	margin-bottom: auto;
+	color: whitesmoke;
+}
+.user_login {
+	display: inline-flex;
+	flex-direction: row;
+	font-size: larger;
+}
+.new_user {
+	margin-left: 250px;
+}
+
+
+@font-face {
+	font-family: bauhaus;
+	src: url(Bauhaus93_V1.woff);
+}
+
+input {
+	width: 200px;
+}
+button {
+	width: 100px;
+}
+p {
+	color: rgba(243, 180, 8, 0.897);
+	font-family: bauhaus;
+}
+
+#mini_titre {
+	color: rgb(244, 98, 7);
+}
