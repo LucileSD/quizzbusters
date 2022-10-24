@@ -2,7 +2,7 @@
 
 let count = 0; //count points
 let flagAnswer = 0; //flag for answer already give or not
-const delay = 7 * 1000; // delay of n * 1 second
+const delay = 2 * 1000; // delay of n * 1 second
 
 $(document).ready(() => {
   // get one list of 10 enigmas
@@ -48,7 +48,6 @@ const sleep = m => new Promise(r => setTimeout(r, m));
 async function displayElement(dataItem) {
   //display elements of one enigma in the screen with some wait
   buzzerAnswer(dataItem);
-  console.log(dataItem);
   $('#category-value').text(dataItem.category); //display category
 
   $('#theme-value').text(dataItem.theme); // display theme
@@ -79,64 +78,63 @@ async function displayElement(dataItem) {
   clearAllElement();
 }
 
-  function buzzerAnswer(dataItem) {
-    // user clicks or enters his answer
-    $("#answer").keypress(() => {
-      //press enter
-      if ( event.which == 13 ) {
-        countPoints(dataItem);
-      }
-    });
-    $(".answerbuzzer").click(() => {
-      //click buzzer
+function buzzerAnswer(dataItem) {
+  // user clicks or enters his answer
+  $("#answer").keypress(() => {
+    //press enter
+    if ( event.which == 13 ) {
       countPoints(dataItem);
-    })
-  }
+    }
+  });
+  $(".answerbuzzer").click(() => {
+    //click buzzer
+    countPoints(dataItem);
+  })
+}
 
-  function countPoints(dataItem) {
-    /* counts points according to when the user validates his answer
-       I use flag to avoid double points
-    */
-    buzzerclicked = true;
-    userAnswer = $("#answer").val();
-    userAnswer = userAnswer.toUpperCase();
-    if ($("#reponse").is(":visible")) {
-      count += 0;
-      $("#number_points").text(count);
-    }
-    else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice5").is(":visible") && $("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
-      count += 1;
-      $("#answer").css({"background-color": "green"});
-      $("#number_points").text(count);
-      flagAnswer = 1;
-    }
-    else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
-      count += 2;
-      $("#answer").css({"background-color": "green"});
-      $("#number_points").text(count);
-      flagAnswer = 1;
-    }
-    else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
-      count += 3;
-      $("#answer").css({"background-color": "green"});
-      $("#number_points").text(count);
-      flagAnswer = 1;
-    }
-    else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
-      count += 4;
-      $("#answer").css({"background-color": "green"});
-      $("#number_points").text(count);
-      flagAnswer = 1;
-    }
-    else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && flagAnswer == 0) {
-      count += 5;
-      $("#answer").css({"background-color": "green"});
-      $("#number_points").text(count);
-      flagAnswer = 1;
-    }
-    else {
-      count += 0;
-      $("#answer").css({"background-color": "red"});
-      $("#number_points").text(count);
-    }
+function countPoints(dataItem) {
+  /* counts points according to when the user validates his answer
+      I use flag to avoid double points
+  */
+  buzzerclicked = true;
+  userAnswer = $("#answer").val();
+  userAnswer = userAnswer.toUpperCase();
+  if ($("#reponse").is(":visible")) {
+    count += 0;
+    $("#number_points").text(count);
   }
+  else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice5").is(":visible") && $("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+    count += 1;
+    $("#answer").css({"background-color": "green"});
+    $("#number_points").text(count);
+    flagAnswer = 1;
+  }
+  else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice4").is(":visible") && $("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+    count += 2;
+    $("#answer").css({"background-color": "green"});
+    $("#number_points").text(count);
+    flagAnswer = 1;
+  }
+  else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice3").is(":visible") && $("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+    count += 3;
+    $("#answer").css({"background-color": "green"});
+    $("#number_points").text(count);
+    flagAnswer = 1;
+  }
+  else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && ($("#indice2").is(":visible") && $("#indice1").is(":visible")) && flagAnswer == 0) {
+    count += 4;
+    $("#answer").css({"background-color": "green"});
+    $("#number_points").text(count);
+    flagAnswer = 1;
+  }
+  else if ((userAnswer === dataItem.answer || userAnswer == dataItem.answer2 || userAnswer == dataItem.answer3) && flagAnswer == 0) {
+    count += 5;
+    $("#answer").css({"background-color": "green"});
+    $("#number_points").text(count);
+    flagAnswer = 1;
+  }
+  else {
+    count += 0;
+    $("#number_points").text(count);
+  }
+}
