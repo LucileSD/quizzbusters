@@ -4,7 +4,7 @@
 """
 from requests import request
 from find_the_enigma import enigmaChosen, enigmasChosen
-from flask import Flask, render_template, Response, make_response, request, session
+from flask import Flask, render_template, Response, make_response, request, session, redirect, url_for
 from flask_mysqldb import MySQL
 import json
 import MySQLdb.cursors
@@ -35,6 +35,12 @@ def rules():
 @app.route("/compte.html", strict_slashes=False)
 def account():
     return render_template("compte.html")
+
+@app.route('/logout')
+def logout():
+    session.pop('loggedin', None)
+    session.pop('username', None)
+    return redirect(url_for('login'))
 
 @app.route("/registration", methods =['GET', 'POST'], strict_slashes=False)
 @app.route("/registration.html", methods =['GET', 'POST'], strict_slashes=False)
@@ -75,7 +81,7 @@ def login():
         account = cursor.fetchone()
         if account:
             session['loggedin'] = True
-            session['name'] = account['name']
+            session['username'] = account['name']
             msg = 'Connexion réussie !'
             return render_template('index.html', msg = msg)
         else:
