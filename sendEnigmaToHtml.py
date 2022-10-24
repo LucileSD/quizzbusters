@@ -2,6 +2,7 @@
 """
     send information for HRML page game
 """
+from genericpath import exists
 from requests import request
 from find_the_enigma import enigmaChosen, enigmasChosen
 from flask import Flask, render_template, Response, make_response, request, session, redirect, url_for
@@ -31,10 +32,14 @@ def index():
 def rules():
     return render_template("regle.html")
 
-@app.route("/compte", strict_slashes=False)
-@app.route("/compte.html", strict_slashes=False)
+@app.route("/compte", methods =['GET', 'POST'], strict_slashes=False)
+@app.route("/compte.html", methods =['GET', 'POST'], strict_slashes=False)
 def account():
-    return render_template("compte.html")
+    name = ''
+    if 'username' in session:
+        name = session['username']
+    return render_template("compte.html", name=name)
+
 
 @app.route('/logout')
 def logout():
@@ -73,6 +78,7 @@ def register():
 @app.route("/login.html", methods =['GET', 'POST'], strict_slashes=False)
 def login():
     msg = ''
+    name = ''
     if request.method == 'POST' and 'name' in request.form and 'pwd' in request.form:
         name_user = request.form['name']
         password = request.form['pwd']
@@ -83,7 +89,8 @@ def login():
             session['loggedin'] = True
             session['username'] = account['name']
             msg = 'Connexion réussie !'
-            return render_template('index.html', msg = msg)
+            name = session['username']
+            return render_template('compte.html', name = name)
         else:
             msg = 'nom ou mot de passe incorrect !'
     return render_template('login.html', msg = msg)
@@ -93,8 +100,8 @@ def login():
 def who():
     return render_template("qui.html")
 
-@app.route("/game", strict_slashes=False)
-@app.route("/game.html", strict_slashes=False)
+@app.route("/game", methods =['GET', 'POST'], strict_slashes=False)
+@app.route("/game.html", methods =['GET', 'POST'], strict_slashes=False)
 def game():
     return render_template("game.html")
 
@@ -113,6 +120,7 @@ def multipleEnigmaJson():
     lastresponse = make_response(jsonObj)
     lastresponse.headers['Content-Type'] = 'application/json; charset=utf-8'
     return lastresponse
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5500)
