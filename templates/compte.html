@@ -21,11 +21,11 @@
 		</header>
 		<div id="regle"><a href="regle.html">Comment jouer</a></div>
 		<ul>
-			<li>Nom:</li>
+			<li>Nom: {{ name }}</li>
 			<li>Mon meillleur score:</li>
 			<li>Mon meilleur classement:</li>
-			<li>Proposer ue question</li>
-			<li>Créer un salon</li>
+			<!--<li>Proposer ue question</li>
+			<li>Créer un salon</li>-->
 			<a href="{{ url_for('logout') }}" class="btn">Me déconnecter</a>
 		</ul>
 		<footer>
