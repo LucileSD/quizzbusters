@@ -25,16 +25,22 @@ mysql = MySQL(app)
 @app.route("/", strict_slashes=False)
 @app.route("/index.html", strict_slashes=False)
 def index():
+    """for the index page"""
     return render_template("index.html")
 
 @app.route("/regle", strict_slashes=False)
 @app.route("/regle.html", strict_slashes=False)
 def rules():
+    """ for the rules page"""
     return render_template("regle.html")
 
 @app.route("/compte", methods =['GET', 'POST'], strict_slashes=False)
 @app.route("/compte.html", methods =['GET', 'POST'], strict_slashes=False)
 def account():
+    """for account page
+        args: name : the name of the connecteed user
+              points: the best score of the user
+    """
     name = ''
     points = ''
     if 'username' in session:
@@ -48,6 +54,7 @@ def account():
 
 @app.route('/logout')
 def logout():
+    """log out in the account page"""
     session.pop('loggedin', None)
     session.pop('username', None)
     return redirect(url_for('login'))
@@ -55,6 +62,7 @@ def logout():
 @app.route("/registration", methods =['GET', 'POST'], strict_slashes=False)
 @app.route("/registration.html", methods =['GET', 'POST'], strict_slashes=False)
 def register():
+    """the user can register a new account"""
     msg = ''
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'email' in request.form:
         name = request.form['username']
@@ -82,6 +90,7 @@ def register():
 @app.route("/login", methods =['GET', 'POST'], strict_slashes=False)
 @app.route("/login.html", methods =['GET', 'POST'], strict_slashes=False)
 def login():
+    """if user has an account he can log in"""
     msg = ''
     if request.method == 'POST' and 'name' in request.form and 'pwd' in request.form:
         name_user = request.form['name']
@@ -102,11 +111,13 @@ def login():
 @app.route("/qui", strict_slashes=False)
 @app.route("/qui.html", strict_slashes=False)
 def who():
+    """description of my project"""
     return render_template("qui.html")
 
 @app.route("/game", methods =['GET', 'POST'], strict_slashes=False)
 @app.route("/game.html", methods =['GET', 'POST'], strict_slashes=False)
 def game():
+    """the game page"""
     return render_template("game.html")
 
 @app.route("/enigma.json", strict_slashes=False)
@@ -127,6 +138,7 @@ def multipleEnigmaJson():
 
 @app.route("/counter", methods =['GET', 'POST'], strict_slashes=False)
 def counter():
+    """retrive the number of points in the api and record it in db"""
     count = request.get_json()
     if 'username' in session:
         name = session['username']
