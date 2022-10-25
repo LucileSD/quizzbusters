@@ -26,7 +26,12 @@ mysql = MySQL(app)
 @app.route("/index.html", strict_slashes=False)
 def index():
     """for the index page"""
-    return render_template("index.html")
+    list = []
+    cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+    cursor.execute('SELECT name, pts_of_week FROM users ORDER BY pts_of_week DESC')
+    all = cursor.fetchall()
+    list.append(all)
+    return render_template("index.html", all=all)
 
 @app.route("/regle", strict_slashes=False)
 @app.route("/regle.html", strict_slashes=False)
@@ -138,7 +143,7 @@ def multipleEnigmaJson():
 
 @app.route("/counter", methods =['GET', 'POST'], strict_slashes=False)
 def counter():
-    """retrive the number of points in the api and record it in db"""
+    """retrieve the number of points in the api and record it in db"""
     count = request.get_json()
     if 'username' in session:
         name = session['username']
@@ -146,8 +151,14 @@ def counter():
         cursor.execute('SELECT points FROM users WHERE name = %s', (name,))
         dict_record_points = cursor.fetchone()
         record_points = dict_record_points.get('points')
+        cursor.execute('SELECT pts_of_week FROM users WHERE name = %s', (name,))
+        dict_record_pts_of_week = cursor.fetchone()
+        record_pts_of_week = dict_record_pts_of_week.get('points')
         if record_points is None or count > record_points:
             cursor.execute('UPDATE users SET points = %s WHERE name = %s', (count, name))
+            mysql.connection.commit()
+        if record_pts_of_week is None or count > record_pts_of_week:
+            cursor.execute('UPDATE users SET pts_of_week = %s WHERE name = %s', (count, name))
             mysql.connection.commit()
     return str(count)
 
