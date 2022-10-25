@@ -36,9 +36,14 @@ def rules():
 @app.route("/compte.html", methods =['GET', 'POST'], strict_slashes=False)
 def account():
     name = ''
+    points = ''
     if 'username' in session:
         name = session['username']
-    return render_template("compte.html", name=name)
+        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute('SELECT points FROM users WHERE name = %s', (name,))
+        dict_record_points = cursor.fetchone()
+        points = dict_record_points.get('points')
+    return render_template("compte.html", name=name, points=points)
 
 
 @app.route('/logout')
@@ -78,7 +83,6 @@ def register():
 @app.route("/login.html", methods =['GET', 'POST'], strict_slashes=False)
 def login():
     msg = ''
-    name = ''
     if request.method == 'POST' and 'name' in request.form and 'pwd' in request.form:
         name_user = request.form['name']
         password = request.form['pwd']
@@ -90,7 +94,7 @@ def login():
             session['username'] = account['name']
             msg = 'Connexion réussie !'
             name = session['username']
-            return render_template('compte.html', name = name)
+            return render_template('index.html')
         else:
             msg = 'nom ou mot de passe incorrect !'
     return render_template('login.html', msg = msg)
@@ -121,6 +125,19 @@ def multipleEnigmaJson():
     lastresponse.headers['Content-Type'] = 'application/json; charset=utf-8'
     return lastresponse
 
+@app.route("/counter", methods =['GET', 'POST'], strict_slashes=False)
+def counter():
+    count = request.get_json()
+    if 'username' in session:
+        name = session['username']
+        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute('SELECT points FROM users WHERE name = %s', (name,))
+        dict_record_points = cursor.fetchone()
+        record_points = dict_record_points.get('points')
+        if record_points is None or count > record_points:
+            cursor.execute('UPDATE users SET points = %s WHERE name = %s', (count, name))
+            mysql.connection.commit()
+    return str(count)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5500)
