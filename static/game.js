@@ -15,7 +15,7 @@ $(document).ready(() => {
 })
 
 async function displayList(dataList) {
-  // dispaly the list of enigmas and prepare the screen for the next one
+  // display the list of enigmas and prepare the screen for the next one
   for (let idx = 0; idx < dataList.length; idx++) {
     await displayElement(dataList[idx]);
     $('#answer').val('');//let empty span answer after one enigma
@@ -23,6 +23,13 @@ async function displayList(dataList) {
     flagAnswer = 0;
   }
   $('#end').text("Fin de la partie");
+  // send the number of points in api for use it in db
+  $.ajax({
+    method: "POST",
+    url: "/counter",
+    data: JSON.stringify(count),
+    contentType: "application/json"
+  })
 }
 
 function clearAllElement() {
