@@ -25,11 +25,9 @@
 			<div class="result">
 				<h3>Scores de la semaine</h3>
 				<ul>
-					<li>1. score n°1</li>
-					<li>2. score n°2</li>
-					<li>3. score n°3</li>
-					<li>4. score n°4</li>
-					<li>5. score n°5</li>
+					{% for unique in all %}
+					<li>{{ unique['name'] }}  {{ unique['pts_of_week'] }}</li>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
