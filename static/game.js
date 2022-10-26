@@ -2,7 +2,7 @@
 
 let count = 0; //count points
 let flagAnswer = 0; //flag for answer already give or not
-const delay = 2 * 1000; // delay of n * 1 second
+const delay = 8 * 1000; // delay of n * 1 second
 
 $(document).ready(() => {
   // get one list of 10 enigmas
@@ -22,6 +22,7 @@ async function displayList(dataList) {
     $("#answer").css({"background-color": "white"});
     flagAnswer = 0;
   }
+  $(".clue").empty()
   $('#end').text("Fin de la partie");
   // send the number of points in api for use it in db
   $.ajax({
@@ -58,7 +59,7 @@ async function displayElement(dataItem) {
   $('#category-value').text(dataItem.category); //display category
 
   $('#theme-value').text(dataItem.theme); // display theme
-
+  await sleep(2*1000);
   $('#indice1').text(dataItem.clue1); //display clue 1
   $('#indice2').hide();
   $('#indice3').hide();
@@ -81,7 +82,7 @@ async function displayElement(dataItem) {
   $('#indice5').show();
   await sleep(delay);
   $('#reponse').show();
-  await sleep(delay);
+  await sleep(3*1000);
   clearAllElement();
 }
 

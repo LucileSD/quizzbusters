@@ -20,14 +20,14 @@ body {
 }
 .result {
 	background-color: rgba(233, 164, 15, 0.836);
-	height: 350px;
+	height: 400px;
 	width: 400px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	color: rgba(14, 27, 216, 0.589);
 	font-family: bauhaus;
+	overflow: auto;
 }
 h3 {
 	font-size: 35px;
@@ -37,6 +37,4 @@ li {
 	margin-bottom: 10px;
 	font-size: 30px;
 }
-ul {
-	list-style-type: none;
-}
+

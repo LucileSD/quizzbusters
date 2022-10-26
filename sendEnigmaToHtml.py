@@ -28,7 +28,7 @@ def index():
     """for the index page"""
     list = []
     cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-    cursor.execute('SELECT name, pts_of_week FROM users ORDER BY pts_of_week DESC')
+    cursor.execute('SELECT name, pts_of_week FROM users WHERE pts_of_week > 0 ORDER BY pts_of_week DESC')
     all = cursor.fetchall()
     list.append(all)
     return render_template("index.html", all=all)
@@ -51,11 +51,11 @@ def account():
     if 'username' in session:
         name = session['username']
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT points FROM users WHERE name = %s', (name,))
+        cursor.execute('SELECT points, pts_of_week FROM users WHERE name = %s', (name,))
         dict_record_points = cursor.fetchone()
         points = dict_record_points.get('points')
-    return render_template("compte.html", name=name, points=points)
-
+        ptsOfWeek = dict_record_points.get('pts_of_week')
+    return render_template("compte.html", name=name, points=points, ptsOfWeek=ptsOfWeek)
 
 @app.route('/logout')
 def logout():
@@ -87,7 +87,7 @@ def register():
         else:
             cursor.execute('INSERT INTO users (name, email, password) VALUES (%s, %s, %s)', (name, email, password))
             mysql.connection.commit()
-            msg = 'Vous êtes bien enregistré !'
+            msg = 'Vous êtes bien enregistré maintenant connectez-vous!'
     elif request.method == 'POST':
         msg = 'si\'il vous plait remplisser tous les champs !'
     return render_template('registration.html', msg = msg)
@@ -95,7 +95,7 @@ def register():
 @app.route("/login", methods =['GET', 'POST'], strict_slashes=False)
 @app.route("/login.html", methods =['GET', 'POST'], strict_slashes=False)
 def login():
-    """if user has an account he can log in"""
+    """if user has an account he can log it"""
     msg = ''
     if request.method == 'POST' and 'name' in request.form and 'pwd' in request.form:
         name_user = request.form['name']
@@ -108,7 +108,7 @@ def login():
             session['username'] = account['name']
             msg = 'Connexion réussie !'
             name = session['username']
-            return render_template('index.html')
+            return render_template('login.html', msg=msg)
         else:
             msg = 'nom ou mot de passe incorrect !'
     return render_template('login.html', msg = msg)
@@ -135,7 +135,7 @@ def enigmaJson():
 
 @app.route("/tenEnigma.json", strict_slashes=False)
 def multipleEnigmaJson():
-    """get 10 enigmas"""
+    """send 10 enigmas"""
     jsonObj = json.dumps(enigmasChosen(), ensure_ascii=False)
     lastresponse = make_response(jsonObj)
     lastresponse.headers['Content-Type'] = 'application/json; charset=utf-8'

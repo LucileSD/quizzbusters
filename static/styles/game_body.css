@@ -19,24 +19,24 @@ body {
 }
 #roll {
 	border: solid;
-	width: 700px;
+	width: 1000px;
 }
 #answer {
 	border: solid;
 	height: 30px;
 	width: 500px;
-	margin-left: 100px;
+	margin-left: 250px;
 	text-align: center;
 }
 .clue {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	width: 900px;
+	width: 1100px;
 	font-size: 1.5em;
 }
 .answerbuzzer {
-	width: 10px;
+	width: 550px;
 	height: 130px;
 	margin-left: 220px;
 	padding: 0;
@@ -55,9 +55,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 150px;
+	width: 70px;
 	font-size: xx-large;
 	font-family: bauhaus;
+	margin: 5px;
 }
 #indice1 {
 	display: inline;
@@ -76,4 +77,9 @@ body {
 }
 #reponse {
 	display: inline;
+}
+#end {
+	font-size: 3em;
+	font-family: bauhaus;
+	color: rgba(243, 114, 8, 0.822);
 }

@@ -20,9 +20,6 @@ header {
 	margin: 0%;
 }
 .info_user {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end !important;
 	color: rgba(243, 180, 8, 0.897);
 	font-family: bauhaus;
 	margin-left: 200px;
