@@ -1,3 +1,4 @@
+-- pts_of-week set to NULL every week
 USE quizz;
 CREATE EVENT IF NOT EXISTS erase
 ON SCHEDULE EVERY 1 WEEK
