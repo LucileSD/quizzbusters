@@ -22,13 +22,15 @@ def enigmaChosen():
     category = list(dictOfEnigma.keys())[0]
     listOfEnigma = dictOfEnigma.get(category)
     enigmaChosen = random.choice(listOfEnigma)
-    theme = enigmaChosen.get("id")
+    alltheme = enigmaChosen.get("id")
     clue1= enigmaChosen.get("d1")
     clue2 = enigmaChosen.get("d2")
     clue3 = enigmaChosen.get("d3")
     clue4 = enigmaChosen.get("d4")
     clue5 = enigmaChosen.get("d5")
     answer = enigmaChosen.get("a1")
+    themesplit = alltheme.split('_')
+    theme = themesplit[0]
     if (enigmaChosen.get("a3")):
         answer2 = enigmaChosen.get("a2")
         answer3 = enigmaChosen.get("a3")

@@ -1,7 +1,7 @@
 {
 	"grammaire": [
 		{
-			"id": "conjonction",
+			"id": "conjonction_1",
 			"d1": "en logique mathématique, je marque l'implication",
 			"d2": "je suis une conjonction de subordination",
 			"d3": "j'introduit une subordonnée circonstancielle de condition",

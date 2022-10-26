@@ -24,7 +24,7 @@
 			"d1": "j'ai été créé en 1895 aux USA afin d'occuper les athlètes pendant l'hiver",
 			"d2": "mon nom d'origine est la mintonette",
 			"d3": "je m'inspire du basket-ball et du badminton",
-			"d4": "ma fédération est le FIVB",
+			"d4": "ma fédération est la FIVB",
 			"d5": "je me joue à 6 contre 6 sur un terrain de 18m sur 9m séparé en 2 par un filet",
 			"a1": "VOLLEY-BALL",
 			"a2": "VOLLEYBALL"
@@ -57,7 +57,7 @@
 			"a1": "RUGBY"
 		},
 		{
-			"id": "discipline_sportive_atypique_1",
+			"id": "discipline-atypique_1",
 			"d1": "je suis un sport collectif mixte inventé aux Pays-Bas",
 			"d2": "il y a 2 équipes de 8 joueurs, les joueurs peuvent passer derrière le panier",
 			"d3": "les quatres attaquants d'une équipe reste dans leur zone comme les 4 défenseurs restent dans leur zone",

@@ -2,7 +2,7 @@
 
 let count = 0; //count points
 let flagAnswer = 0; //flag for answer already give or not
-const delay = 8 * 1000; // delay of n * 1 second
+const delay = 7 * 1000; // delay of n * 1 second
 
 $(document).ready(() => {
   // get one list of 10 enigmas

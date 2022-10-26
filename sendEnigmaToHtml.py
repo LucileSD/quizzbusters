@@ -48,6 +48,7 @@ def account():
     """
     name = ''
     points = ''
+    ptsOfWeek = ''
     if 'username' in session:
         name = session['username']
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)

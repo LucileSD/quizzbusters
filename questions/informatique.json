@@ -29,7 +29,7 @@
 			"a2": "SERVEUR INFORMATIQUE"
 		},
 		{
-			"id": "systeme_exploitation_1",
+			"id": "systeme-exploitation_1",
 			"d1": "je suis créé en 1991 et open source",
 			"d2": "j'ai été créé par Linus Torvalds",
 			"d3": "je suis sous licence GNU GPL",
