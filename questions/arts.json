@@ -113,7 +113,7 @@
 			"d4": "je me déroule à Clisson",
 			"d5": "ma spécialité est de recevoir des groupes de Metal, Punk..",
 			"a1": "HELLFEST",
-			"a2": "HELFEST FESTIVAL"
+			"a2": "HELLFEST OPEN AIR FESTIVAL"
 		},
 		{
 			"id": "festival_3",
@@ -128,9 +128,9 @@
 			"id": "fete_1",
 			"d1": "mes premières danses officielles étaient en 1676 à Mardi Gras",
 			"d2": "les 3 joyeuses marquent le début des festivités",
-			"d3": "ma principale règle est que chaque participants doit venir déguisé",
+			"d3": "ma principale règle est que chaque participant doit venir déguisé",
 			"d4": "dans mes rues, vous entendrez la cantate à Jean Bart",
-			"d5": "la base de la bande, c'est la ligne",
+			"d5": "la base de la bande, c'est la ligne!",
 			"a1": "CARNAVAL DE DUNKERQUE"
 		},
 		{
@@ -178,7 +178,8 @@
 			"d3": "extrémement controversé, dès 1997 l'avocat Jack Thompson part en guerre contre mon distributeur Take Two",
 			"d4": "je suis un monde ouvert dans lequel mon personnage effectue des activités criminelles",
 			"d5": "Sam et Dan Houser sont les patrons emblématiques de mon éditeur: Rockstar North",
-			"a1": "GTA"
+			"a1": "GTA",
+			"a2": "GRAND THEFT AUTO"
 		}
 	]
 }

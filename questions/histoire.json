@@ -17,9 +17,9 @@
 			"d3": "je suis connu pour mes travaux sur l'énergie électrique",
 			"d4": "j'ai travaillé avec Thomas Edison qui s'est attribué plusieurs de mes inventions",
 			"d5": "mon nom est donné à l’unité internationale d’induction magnétique",
-			"a1": "NICOLAS TESLA",
+			"a1": "NIKOLA TESLA",
 			"a2": "TESLA",
-			"a3": "NIKOLA TESLA"
+			"a3": "NICOLAS TESLA"
 		},
 		{
 			"id": "mouvement_1",
@@ -57,7 +57,8 @@
 			"d3": "les rames sont actionnées par la force musculaire lors des manoeuvres d'attaques",
 			"d4": "je suis un type de navire à rames et voiles latines sur un, deux ou trois mâts à antennes",
 			"d5": "je suis mue par des galériens",
-			"a1": "GALERE"
+			"a1": "GALERE",
+			"a2": "GALÈRE"
 		},
 		{
 			"id": "personne_3",
@@ -86,8 +87,8 @@
 			"d3": "résistant, j'étais proche du général Charles de Gaulle",
 			"d4": "je suis le tout premier ministre de la culture",
 			"d5": "je suis l'auteur de 'La Condition Humaine'",
-			"a1": "MALRAUX",
-			"a2": "ANDRE MALRAUX"
+			"a1": "ANDRE MALRAUX",
+			"a2": "MALRAUX"
 		},
 		{
 			"id": "personne_5",
@@ -96,8 +97,8 @@
 			"d3": "je suis considéré comme l'un des fondateurs majeurs de l'État moderne en France",
 			"d4": "j'étais le principal ministre d'Etat de Louis XIII",
 			"d5": "mon successeur fût le cardinal de Mazarin",
-			"a1": "RICHELIEU",
-			"a2": "CARDINAL DE RICHELIEU"
+			"a1": "CARDINAL DE RICHELIEU",
+			"a2": "RICHELIEU"
 		},
 		{
 			"id": "personne_6",

@@ -7,7 +7,8 @@
 			"d3": "on y parle anglais, français, allemand",
 			"d4": "mes membres sont 27 chefs d'Etat",
 			"d5": "je suis une institution de l'Union européenne",
-			"a1": "CONSEIL EUROPEEN"
+			"a1": "CONSEIL EUROPEEN",
+			"a2": "CONSEIL EUROPÉEN"
 		},
 		{
 			"id": "homme politique_1",
@@ -26,8 +27,8 @@
 			"d3": "l'élection présidentielle de 1965 m'a vu perdre au second tour contre Charles de Gaulle",
 			"d4": "j'ai interdit la peine de mort",
 			"d5": "j'ai été président de la 5e République de 1981 à 1995",
-			"a1": "MITTERRAND",
-			"a2": "FRANCOIS MITTERAND"
+			"a1": "FRANCOIS MITTERRAND",
+			"a2": "MITTERAND"
 		},
 		{
 			"id": "geographie_1",
@@ -36,8 +37,8 @@
 			"d3": "je fus établi comme une association d'États indépendants et souverains, « librement associés » et égaux, mais tous pour la couronne",
 			"d4": "je suis aujourd'hui composé de 56 États membres qui sont presque tous d'anciens territoires de l'Empire britannique",
 			"d5": "le roi Charles III en est le chef",
-			"a1": "COMMONWEALTH",
-			"a2": "COMMONWEALTH OF NATIONS"
+			"a1": "COMMONWEALTH OF NATIONS",
+			"a2": "COMMONWEALTH"
 		},
 		{
 			"id": "guerre_1",
@@ -56,7 +57,8 @@
 			"d3": "mon mouvement est fondée sous l'influence de Léon Tolstoï en Europe, mêlant retour à la nature, végétarisme, non-violence",
 			"d4": "je cherche à développer l'état de conscience de l'empreinte polluante de l'être humain sur le milieu",
 			"d5": "mon bord politique est représenté par le vert",
-			"a1": "ECOLOGIE"
+			"a1": "ECOLOGIE",
+			"a2": "ÉCOLOGIE"
 		},
 		{
 			"id": "organisation_1",

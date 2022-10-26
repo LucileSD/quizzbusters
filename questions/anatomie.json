@@ -16,7 +16,8 @@
 			"d3": "je protège le système nerveux central",
 			"d4": "les pirates m'appelle Jolly Roger",
 			"d5": "je suis l'os de la tête",
-			"a1": "CRANE"
+			"a1": "CRANE",
+			"a2": "CRÂNE"
 		},
 		{
 			"id": "corps_3",
@@ -35,7 +36,8 @@
 			"d3": "je suis aussi une discipline de la plongée sous-marine",
 			"d4": "je peux être volontaire, quand vous plongez",
 			"d5": "je suis l'arrêt de la ventilation",
-			"a1": "APNEE"
+			"a1": "APNEE",
+			"a2": "APNÉE"
 		}
 		
 	]
