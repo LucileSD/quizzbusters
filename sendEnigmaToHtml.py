@@ -110,8 +110,7 @@ def login():
             session['username'] = account['name']
             msg = 'Connexion réussie !'
             name = session['username']
-            alli = index()
-            return render_template("index.html", all=alli)
+            return render_template('login.html', msg = msg)
         else:
             msg = 'nom ou mot de passe incorrect !'
     return render_template('login.html', msg = msg)

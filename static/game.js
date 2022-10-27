@@ -1,8 +1,8 @@
-// program to play with no connection
+// program to play
 
 let count = 0; //count points
 let flagAnswer = 0; //flag for answer already give or not
-const delay = 7 * 1000; // delay of n * 1 second
+const delay = 8 * 1000; // delay of n * 1 second
 
 $(document).ready(() => {
   // get one list of 10 enigmas
@@ -23,7 +23,7 @@ async function displayList(dataList) {
     flagAnswer = 0;
   }
   $(".clue").empty()
-  $('#end').text("Fin de la partie");
+  $('#end').text("/50   Fin de la partie");
   // send the number of points in api for use it in db
   $.ajax({
     method: "POST",
