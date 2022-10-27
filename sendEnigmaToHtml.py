@@ -89,6 +89,7 @@ def register():
             cursor.execute('INSERT INTO users (name, email, password) VALUES (%s, %s, %s)', (name, email, password))
             mysql.connection.commit()
             msg = 'Vous êtes bien enregistré maintenant connectez-vous!'
+            return render_template('login.html')
     elif request.method == 'POST':
         msg = 'si\'il vous plait remplisser tous les champs !'
     return render_template('registration.html', msg = msg)
@@ -109,7 +110,8 @@ def login():
             session['username'] = account['name']
             msg = 'Connexion réussie !'
             name = session['username']
-            return render_template('login.html', msg=msg)
+            alli = index()
+            return render_template("index.html", all=alli)
         else:
             msg = 'nom ou mot de passe incorrect !'
     return render_template('login.html', msg = msg)
