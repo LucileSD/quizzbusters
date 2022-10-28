@@ -10,6 +10,7 @@ import random
 """list json file and extrat one file
         return the good file"""
 
+
 def enigmaChosen():
     """
         in all the json files
@@ -23,7 +24,7 @@ def enigmaChosen():
     listOfEnigma = dictOfEnigma.get(category)
     enigmaChosen = random.choice(listOfEnigma)
     alltheme = enigmaChosen.get("id")
-    clue1= enigmaChosen.get("d1")
+    clue1 = enigmaChosen.get("d1")
     clue2 = enigmaChosen.get("d2")
     clue3 = enigmaChosen.get("d3")
     clue4 = enigmaChosen.get("d4")
@@ -34,37 +35,38 @@ def enigmaChosen():
     if (enigmaChosen.get("a3")):
         answer2 = enigmaChosen.get("a2")
         answer3 = enigmaChosen.get("a3")
-        dictResult = {'category': category,
-                  "theme": theme,
-                  "clue1": clue1,
-                  "clue2": clue2,
-                  "clue3": clue3,
-                  "clue4": clue4,
-                  "clue5": clue5,
-                  "answer": answer,
-                  "answer2": answer2,
-                  "answer3": answer3}
+        dictResult = {"category": category,
+                      "theme": theme,
+                      "clue1": clue1,
+                      "clue2": clue2,
+                      "clue3": clue3,
+                      "clue4": clue4,
+                      "clue5": clue5,
+                      "answer": answer,
+                      "answer2": answer2,
+                      "answer3": answer3}
     elif (enigmaChosen.get("a2")):
         answer2 = enigmaChosen.get("a2")
-        dictResult = {'category': category,
-                  "theme": theme,
-                  "clue1": clue1,
-                  "clue2": clue2,
-                  "clue3": clue3,
-                  "clue4": clue4,
-                  "clue5": clue5,
-                  "answer": answer,
-                  "answer2": answer2}
+        dictResult = {"category": category,
+                      "theme": theme,
+                      "clue1": clue1,
+                      "clue2": clue2,
+                      "clue3": clue3,
+                      "clue4": clue4,
+                      "clue5": clue5,
+                      "answer": answer,
+                      "answer2": answer2}
     else:
-        dictResult = {'category': category,
-                    "theme": theme,
-                    "clue1": clue1,
-                    "clue2": clue2,
-                    "clue3": clue3,
-                    "clue4": clue4,
-                    "clue5": clue5,
-                    "answer": answer}
+        dictResult = {"category": category,
+                      "theme": theme,
+                      "clue1": clue1,
+                      "clue2": clue2,
+                      "clue3": clue3,
+                      "clue4": clue4,
+                      "clue5": clue5,
+                      "answer": answer}
     return dictResult
+
 
 def enigmasChosen():
     """a suit of 10 enigmas"""
