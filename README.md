@@ -12,8 +12,10 @@ You can find in this project:
 - HTML and CSS, I use them to make my static templates
 
 ## Play
-You can see some details in this [video]((https://youtu.be/TmCeF0ZLs-g)).
-The game is not on line for the moment, I need to add some features before. 
+You can see some details in this [video](https://youtu.be/TmCeF0ZLs-g).
+
+The game is not on line for the moment, I need to add some features before.
+
 If you want to try it, please fork this repository and to lunch the game locally execute ./startgame.py
 
 ## Author
